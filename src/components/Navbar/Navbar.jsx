@@ -1,46 +1,25 @@
-import "./Navbar.css";
-import { Link } from "react-router-dom";
-import { useContext } from "react";
-import { AuthContext } from "../../context/auth.context";
+import Button from 'react-bootstrap/Button';
+import Container from 'react-bootstrap/Container';
+import Form from 'react-bootstrap/Form';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+import Offcanvas from 'react-bootstrap/Offcanvas';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-function Navbar() {
-  // // Subscribe to the AuthContext to gain access to
-  // // the values from AuthContext.Provider's `value` prop
-  // const { isLoggedIn, user, logOutUser } = useContext(AuthContext);
-
-  // return (
-  //   <nav>
-  //     <Link to="/">
-  //       <button>Home</button>
-  //     </Link>
-
-  //     {isLoggedIn && (
-  //       <>
-  //         <button onClick={logOutUser}>Logout</button>
-
-  //         <Link to="/profile">
-  //           <button>Profile</button>
-  //           {/* <img src="https://picsum.photos/id/402/200/300" style={{ width: 50, height: 50, borderRadius: 25}} alt="profile" /> */}
-  //         </Link>
-
-  //         <span>{user && user.name}</span>
-  //       </>
-  //     )}
-
-  //     {!isLoggedIn && (
-  //       <>
-  //         <Link to="/signup">
-  //           {" "}
-  //           <button>Sign Up</button>{" "}
-  //         </Link>
-  //         <Link to="/login">
-  //           {" "}
-  //           <button>Login</button>{" "}
-  //         </Link>
-  //       </>
-  //     )}
-  //   </nav>
-  // );
+function OffcanvasExample() {
+  return (
+    <>
+      {['xxl'].map((expand) => (
+        <Navbar key={expand} style={{}} bg="white" expand={expand} className="mb-3">
+					<div className='flex'>
+          <img src="images/code.png" className='code' alt="" />
+					<img className='menu' src="images/menu.png" alt="" />
+					</div>
+        </Navbar>
+      ))}
+    </>
+  );
 }
 
-export default Navbar;
+export default OffcanvasExample;

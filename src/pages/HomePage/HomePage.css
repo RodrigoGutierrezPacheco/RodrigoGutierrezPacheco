@@ -14,6 +14,56 @@
 }
 
 body{
-	background-color: black;
-	color: white;
+	background-color: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
+}
+
+@media (max-width:426px){
+	.code{
+		width: 20%;
+		margin-left: 2%;
+	}
+	
+	.menu{
+		width: 10%;
+		display: flex;
+		margin-left: 125%;
+	}
+	
+	.flex{
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+	}
+
+	.avatar{
+		width: 30%;
+	}
+
+	.info{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.png{
+		width: 40%;
+		margin-top: 20%;
+		margin-bottom: 10%;
+	}
+
+	.one{
+		background-color: aqua;
+		width: 100%;
+	}
+
+	.two{
+		background-color: aquamarine;
+		width: 100%;
+	}
+
+	.three{
+		background-color: blue;
+		width: 100%;
+	}
 }
