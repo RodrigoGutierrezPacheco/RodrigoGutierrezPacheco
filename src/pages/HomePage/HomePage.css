@@ -55,15 +55,18 @@ body{
 	.one{
 		background-color: aqua;
 		width: 100%;
+		margin-bottom: 10%;
 	}
 
 	.two{
 		background-color: aquamarine;
 		width: 100%;
+		margin-bottom: 10%;
 	}
 
 	.three{
 		background-color: blue;
 		width: 100%;
+		margin-bottom: 10%;
 	}
 }
