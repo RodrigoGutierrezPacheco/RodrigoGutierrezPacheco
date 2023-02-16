@@ -40,6 +40,10 @@ body{
 		width: 30%;
 	}
 
+	.avatar1{
+		width: 50%;
+	}
+
 	.info{
 		display: flex;
 		flex-direction: column;
@@ -68,5 +72,27 @@ body{
 		background-color: blue;
 		width: 100%;
 		margin-bottom: 10%;
+	}
+
+	.Modal{
+		color: rgb(0, 0, 0);
+		height: 100%;
+	}
+
+	.h1{
+		color: black;
+	}
+
+	.a{
+		text-decoration: none;
+		color: black;
+		font-weight: 700;
+		font-size: 2rem;
+		margin-bottom: 20%;
+		margin-top: 20%;
+	}
+
+	.flex-column{
+		display: flex;
 	}
 }
