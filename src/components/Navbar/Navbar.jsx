@@ -10,8 +10,17 @@ import Swal from 'sweetalert2';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Modal from 'react-modal';
+import { motion,useTime,useTransform } from 'framer-motion';
 
 function OffcanvasExample() {
+	
+	const time = useTime()
+	const rotate = useTransform(
+		time,
+		[0,4000],
+		[0,360],
+		{clamp: false}
+	)
 
 	const customStyles = {
 		content: {
@@ -54,7 +63,7 @@ function OffcanvasExample() {
       {['xxl'].map((expand) => (
         <Navbar key={expand} style={{}} bg="white" expand={expand} className="mb-3">
 					<div className='flex'>
-					<img onClick={goHome}  src="images/code.png" className='code' alt="" />
+					<motion.img style={{rotate}} onClick={goHome}  src="images/code1.png" className='code' alt="" />
 					<img onClick={openModal}  className='menu' src="images/menu.png" alt="" />
 					<Modal
 					isOpen={modalIsOpen}
@@ -64,7 +73,7 @@ function OffcanvasExample() {
 					contentLabel="Example Modal"
 					>
 						<p onClick={closeModal}>X</p>
-             <img onClick={goHome} className='avatar1' src="images/avatar1.png" alt="" />
+             <img onClick={goHome} className='avatar1' src="images/avatar2.png" alt="" />
 						<div className='flex-column'>
 						 <a className='a' href="/aboutMe">About Me</a>
 						 <a className='a' href="
