@@ -20,8 +20,8 @@ body{
 
 @media (max-width:500px){
 	.code{
-		width: 10%;
-		margin-left: 2%;
+		width: 5%;
+		margin-bottom: 10%;
 	}
 	
 	.menu{
@@ -58,6 +58,14 @@ body{
 		justify-content: center;
 		width: 100vw;
 	}
+
+	.title{
+		width: 45vw;
+		margin-left: auto;
+		margin-right: auto;
+		font-weight: 800;
+	}
+
 
 	.png{
 		width: 20vw;
@@ -106,20 +114,57 @@ body{
 
 	.a{
 		text-decoration: none;
-		color: black;
-		font-weight: 700;
+		color: rgb(255, 0, 0);
+		font-weight: 800;
 		font-size: 2rem;
 		margin-bottom: 20%;
-		margin-top: 20%;
 	}
 
+	.texto1{
+		font-size: 1rem;
+		font-weight: 700;
+	}
+
+	.marginl{
+		margin-left: auto;
+	}
+
+
+
+	.marginr{
+		margin-right: auto;
+	}
 	.flex-column{
 		display: flex;
 	}
 
+	.flex2{
+		display: flex;
+		flex-direction: row;
+	}
+
 	.footer{
-		background-color: black;
-		color: white;
-		height: 6vh;
+		display: flex;
+		margin-left: auto;
+		margin-right: auto;
+		bottom: 0;
+		width: 100%;
+		position: absolute;
+		bottom: 0;
+	}
+
+	.body{
+   margin: 0px;
+	 padding: 0px;
+	 height: 100%;
+	}
+
+	.png1{
+		width: 5%;
+		height: 5%;
+	}
+
+	.b{
+		font-size: 1rem;
 	}
 }

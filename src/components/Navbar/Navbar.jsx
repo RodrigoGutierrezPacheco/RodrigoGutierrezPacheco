@@ -63,8 +63,7 @@ function OffcanvasExample() {
       {['xxl'].map((expand) => (
         <Navbar key={expand} style={{}} bg="white" expand={expand} className="mb-3">
 					<div className='flex'>
-					<motion.img style={{rotate}} onClick={goHome}  src="images/code1.png" className='code' alt="" />
-					<img onClick={openModal}  className='menu' src="images/menu.png" alt="" />
+					{/* <img onClick={openModal}  className='menu' src="images/menu.png" alt="" /> */}
 					<Modal
 					isOpen={modalIsOpen}
 					onAfterOpen={afterOpenModal}
