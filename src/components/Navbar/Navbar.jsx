@@ -72,8 +72,10 @@ function OffcanvasExample() {
 					style={customStyles}
 					contentLabel="Example Modal"
 					>
-						<p onClick={closeModal}>X</p>
+						<div className='flex1'>
+             <motion.img onClick={closeModal} whileTap={{scale:1.2}} className='x' src="images/x.png" alt="" />
              <img onClick={goHome} className='avatar1' src="images/avatar2.png" alt="" />
+						</div>
 						<div className='flex-column'>
 						 <a className='a' href="/aboutMe">About Me</a>
 						 <a className='a' href="
