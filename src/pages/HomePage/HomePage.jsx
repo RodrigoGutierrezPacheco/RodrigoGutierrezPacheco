@@ -9,12 +9,19 @@ function HomePage() {
 			<div className="info">
 				<div className="one">
 				 <img className="png" src="images/info.png" alt="" />
+				 <h1>About Me</h1>
 				</div>
 				<div className="two">
 				 <img className="png" src="images/portfolio.png" alt="" />
+				 <h1>Work</h1>
 				</div>
 				<div className="three">
 				 <img className="png" src="images/contact.png" alt="" />
+				 <h1>Contact</h1>
+				</div>
+				<div className="four">
+				 <img className="png" src="images/contact.png" alt="" />
+				 <h1>Contact</h1>
 				</div>
 			</div>
     </div>

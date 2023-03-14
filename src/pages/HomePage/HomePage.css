@@ -54,31 +54,34 @@ body{
 
 	.info{
 		display: flex;
-		flex-direction: column;
-		align-items: center;
+		flex-wrap: wrap;
 	}
 
 	.png{
-		width: 40%;
+		width: 10vw;
 		margin-top: 20%;
 		margin-bottom: 10%;
 	}
 
 	.one{
 		background-color: #003785;
-		width: 100%;
-		margin-bottom: 10%;
+		width: 48.3vw;
 	}
 
 	.two{
 		background-color: #1465bb;
-		width: 100%;
-		margin-bottom: 10%;
+		width: 48.3vw;
 	}
 
 	.three{
 		background-color: #2196f3;
-		width: 100%;
+		width: 48.3vw;
+		margin-bottom: 10%;
+	}
+
+	.four{
+		background-color: #81c9fa;
+		width: 48.3vw;
 		margin-bottom: 10%;
 	}
 
