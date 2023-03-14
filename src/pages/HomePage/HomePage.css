@@ -167,4 +167,14 @@ body{
 	.b{
 		font-size: 1rem;
 	}
+
+	.width100{
+		width: 100vw;
+	}
+
+	.modalAcerca{
+		background-color: black;
+		color: white;
+		height: 100vh;
+	}
 }
