@@ -60,9 +60,13 @@ body{
 	}
 
 	.png{
-		width: 10vw;
-		margin-top: 20%;
-		margin-bottom: 10%;
+		width: 20vw;
+		display: block;
+		margin: auto;
+		margin-top: 2rem;
+		justify-content: center;
+		align-items: center;
+		position: relative;
 	}
 
 	.one{
