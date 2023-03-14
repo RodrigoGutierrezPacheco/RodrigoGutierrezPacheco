@@ -68,23 +68,25 @@ body{
 	.one{
 		background-color: #003785;
 		width: 50vw;
+		height: 30vh;
 	}
 
 	.two{
 		background-color: #1465bb;
 		width: 50vw;
+		height: 30vh;
 	}
 
 	.three{
 		background-color: #2196f3;
 		width: 50vw;
-		margin-bottom: 10%;
+		height: 30vh;
 	}
 
 	.four{
 		background-color: #81c9fa;
 		width: 50vw;
-		margin-bottom: 10%;
+		height: 30vh;
 	}
 
 	.Modal{
