@@ -114,4 +114,10 @@ body{
 	.flex-column{
 		display: flex;
 	}
+
+	.footer{
+		background-color: black;
+		color: white;
+		height: 6vh;
+	}
 }
