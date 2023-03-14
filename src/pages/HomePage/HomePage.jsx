@@ -24,8 +24,6 @@ function HomePage() {
 				 <h1>Contact</h1>
 				</div>
 			</div>
-				<footer className="footer">
-				</footer>
     </div>
   );
 }
