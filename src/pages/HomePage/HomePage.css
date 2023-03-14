@@ -65,19 +65,19 @@ body{
 	}
 
 	.one{
-		background-color: aqua;
+		background-color: #003785;
 		width: 100%;
 		margin-bottom: 10%;
 	}
 
 	.two{
-		background-color: aquamarine;
+		background-color: #1465bb;
 		width: 100%;
 		margin-bottom: 10%;
 	}
 
 	.three{
-		background-color: blue;
+		background-color: #2196f3;
 		width: 100%;
 		margin-bottom: 10%;
 	}
