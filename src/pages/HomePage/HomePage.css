@@ -70,27 +70,29 @@ body{
 	}
 
 	.one{
-		background-color: #003785;
+		/* background-color: #003785; */
 		width: 50vw;
 		height: 20vh;
 	}
 
 	.two{
-		background-color: #1465bb;
+		/* background-color: #1465bb; */
 		width: 50vw;
 		height: 20vh;
 	}
 
 	.three{
-		background-color: #2196f3;
+		/* background-color: #2196f3; */
 		width: 50vw;
 		height: 20vh;
+		margin-top: 2rem;
 	}
 
 	.four{
-		background-color: #81c9fa;
+		/* background-color: #81c9fa; */
 		width: 50vw;
 		height: 20vh;
+		margin-top: 2rem;
 	}
 
 	.Modal{
