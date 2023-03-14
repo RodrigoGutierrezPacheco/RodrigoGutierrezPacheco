@@ -3,7 +3,7 @@ import "./HomePage.css";
 function HomePage() {
   return (
     <div>
-			<img className="avatar" src="images/avatar1.png" alt="" />
+			<img className="avatar" src="images/guiño.gif" alt="" />
       <h1>Hello, My name is Rodrigo</h1>
 			<p>Fullstack web developer, passionate about technology</p>		
 			<div className="info">
