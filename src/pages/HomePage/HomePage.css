@@ -55,6 +55,8 @@ body{
 	.info{
 		display: flex;
 		flex-wrap: wrap;
+		justify-content: center;
+		width: 100vw;
 	}
 
 	.png{
@@ -65,23 +67,23 @@ body{
 
 	.one{
 		background-color: #003785;
-		width: 48.3vw;
+		width: 50vw;
 	}
 
 	.two{
 		background-color: #1465bb;
-		width: 48.3vw;
+		width: 50vw;
 	}
 
 	.three{
 		background-color: #2196f3;
-		width: 48.3vw;
+		width: 50vw;
 		margin-bottom: 10%;
 	}
 
 	.four{
 		background-color: #81c9fa;
-		width: 48.3vw;
+		width: 50vw;
 		margin-bottom: 10%;
 	}
 
