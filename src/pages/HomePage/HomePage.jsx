@@ -33,10 +33,10 @@ function HomePage() {
 			confirmButtonColor:"black",
 			confirmButtonText:"Ok",
 			showClass: {
-				popup: 'animate__animated animate__backInDown'
+				popup: 'animate__animated animate__backInRight'
 			},
 			hideClass: {
-				popup: 'animate__animated animate__bounceOut'
+				popup: 'animate__animated animate__backOutDown'
 			}
 		})
 	}
@@ -47,10 +47,10 @@ function HomePage() {
 			confirmButtonColor:"black",
 			confirmButtonText:"Ok",
 			showClass: {
-				popup: 'animate__animated animate__backInRight'
+				popup: 'animate__animated animate__backInDown'
 			},
 			hideClass: {
-				popup: 'animate__animated animate__backOutDown'
+				popup: 'animate__animated animate__bounceOut'
 			}
 		})
 	}
