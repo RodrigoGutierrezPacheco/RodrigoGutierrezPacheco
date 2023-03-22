@@ -15,17 +15,17 @@ function HomePage() {
 	function acerca(){
 		Swal.fire({
 			html:' <h2>Acerca de Mi.</h2>'+
-			'<div style="height: 20rem; overflow: scroll;">'+
+			'<div style="height:20rem; text-align:justify; overflow: scroll;">'+
 			' <p>Soy un Desarrollador Web Frontend Junior egresado de Ironhack con un año de experiencia en HTML, CSS y JavaScript. Además, he estado trabajando en proyectos propios y adquiriendo nuevos conocimientos por mi cuenta. Aunque no tengo experiencia laboral, estoy muy motivado para aplicar mis conocimientos y habilidades para crear experiencias excepcionales para los usuarios. Estoy comprometido con el aprendizaje continuo y estoy ansioso por unirme a un equipo innovador y apasionado para llevar los proyectos al siguiente nivel. Si buscas a alguien que esté listo para enfrentar nuevos desafíos, no dudes en considerarme para cualquier oportunidad.</p>'+
-			'</div>'+
-			'<div>'+
 			'<h1>Tecnologias</h1>'+
-			'<img style="height:5rem" src="images/html.png" alt="" />'+
-			'<img style="height:5rem" src="images/css.png" alt="" />'+
-			'<img style="height:5rem" src="images/js.png" alt="" />',
+			'<img style="height:4rem" src="images/html.png" alt="" />'+
+			'<img style="height:4rem" src="images/css.png" alt="" />'+
+			'<img style="height:4rem" src="images/js.png" alt="" />'+
+			'<img style="height:4rem" src="images/react.png" alt="" />'+
+			'<div/>',
 			confirmButtonColor:"black",
 			confirmButtonText:"X",
-			height:200,
+			height:"50vh",
 			background:'#fff',
 			showClass: {
 				popup: 'animate__animated animate__backInLeft'
