@@ -149,9 +149,8 @@ body{
 		margin-right: auto;
 		bottom: 0;
 		width: 100%;
-		/* position: absolute; */
-		/* bottom: 0; */
-	}
+		position: absolute;
+ }
 
 	.body{
    margin: 0px;
@@ -174,14 +173,14 @@ body{
 
 	.modalAcerca{
 		background-color: black;
-		border: 5px solid red;
-		border-radius: .5em;
 		color: white;
-		height: 50vh;
-		margin-top: 19rem;
-		width: 95vw;
-		margin-right: auto;
-		margin-left: auto;
+		height: 100vh;
+	}
+
+	.h2{
+		overflow: scroll;
+		height: 100px;
+		color: red;
 	}
 
 }
