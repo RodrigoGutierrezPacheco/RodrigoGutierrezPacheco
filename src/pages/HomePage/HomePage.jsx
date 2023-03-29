@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import Swal from 'sweetalert2';
 import { motion } from 'framer-motion';
 import '../HomePage/HomePage.css'
+import 'animate.css';
 
 const AnimacionDeEscritura = ({ texto }) => {
   const [textoActual, setTextoActual] = useState(" ");
