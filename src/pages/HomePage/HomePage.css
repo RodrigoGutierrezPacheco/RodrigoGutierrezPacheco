@@ -164,6 +164,10 @@ body{
 		margin-bottom: .5rem;
 	}
 
+	.tecnologias{
+		margin-bottom: 1rem;
+	}
+
 	.b{
 		font-size: 1rem;
 		margin-left: .5rem;
@@ -183,6 +187,10 @@ body{
 	.h2{
 		overflow: scroll;
 		height: 100px;
+		color: red;
+	}
+
+	.rojo{
 		color: red;
 	}
 

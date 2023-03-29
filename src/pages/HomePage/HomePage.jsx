@@ -1,42 +1,69 @@
-import "./HomePage.css";
-import { motion,useTime,useTransform } from 'framer-motion';
-import Swal from "sweetalert2";
-import 'animate.css';
+import { useTime, useTransform } from 'framer-motion';
+import React, { useState, useEffect } from 'react';
+import Swal from 'sweetalert2';
+import { motion } from 'framer-motion';
+import '../HomePage/HomePage.css'
+
+const AnimacionDeEscritura = ({ texto }) => {
+  const [textoActual, setTextoActual] = useState(" ");
+		
+  useEffect(() => {
+    let i = -1;
+    const timer = setInterval(() => {
+      if (i < texto.length) {
+        setTextoActual(texto.slice(0, i + 1));
+        i++;
+      } else {
+        clearInterval(timer);
+      }
+    }, 100);
+	
+    return () => clearInterval(timer);
+  }, [texto]);
+	
+  const palabras = textoActual.split(" ");
+  const rojoIndex = palabras.findIndex((palabra) => palabra === "Rodrigo.");
+	
+  return (
+		<span>
+			{palabras.slice(0, rojoIndex).join(" ")}{" "}
+			<span className="rojo">{palabras[rojoIndex]}</span>{" "}
+			{palabras.slice(rojoIndex +  palabras.length + ".").join(" ")}		
+			</span>
+  );
+};
 
 function HomePage() {
-	const time = useTime()
-	const rotate = useTransform(
-		time,
-		[0,4000],
-		[0,360],
-		{clamp: false}
-	)
+  const time = useTime();
+  const rotate = useTransform(time, [0, 4000], [0, 360], { clamp: false });	
 
-	function acerca(){
-		Swal.fire({
-			html:' <h2>Acerca de Mi.</h2>'+
-			'<div style="height:20rem; text-align:justify; overflow: scroll;">'+
-			' <p>Soy un Desarrollador Web Frontend Junior egresado de Ironhack con un año de experiencia en HTML, CSS y JavaScript. Además, he estado trabajando en proyectos propios y adquiriendo nuevos conocimientos por mi cuenta. Aunque no tengo experiencia laboral, estoy muy motivado para aplicar mis conocimientos y habilidades para crear experiencias excepcionales para los usuarios. Estoy comprometido con el aprendizaje continuo y estoy ansioso por unirme a un equipo innovador y apasionado para llevar los proyectos al siguiente nivel. Si buscas a alguien que esté listo para enfrentar nuevos desafíos, no dudes en considerarme para cualquier oportunidad.</p>'+
-			'<h1>Tecnologias</h1>'+
-			'<img style="height:4rem" src="images/html.png" alt="" />'+
-			'<img style="height:4rem" src="images/css.png" alt="" />'+
-			'<img style="height:4rem" src="images/js.png" alt="" />'+
-			'<img style="height:4rem" src="images/react.png" alt="" />'+
-			'<img style="height:4rem" src="images/git.png" alt="" />'+
-			'<img style="height:4rem" src="images/github.png" alt="" />'+
-			'<div/>',
-			confirmButtonColor:"black",
-			confirmButtonText:"X",
-			height:"50vh",
-			background:'#fff',
-			showClass: {
-				popup: 'animate__animated animate__backInLeft'
-			},
-			hideClass: {
-				popup: 'animate__animated animate__fadeOutUp'
-			}
-		})
-	}
+  function acerca() {
+    Swal.fire({
+      html: ' <h1>Acerca de Mi.</h1>' +
+        '<div style="height:20rem; text-align:justify; overflow: scroll;">' +
+        ' <p>¡Hola! Mi nombre es Rodrigo Gutierrez Pacheco y soy un apasionado desarrollador web front-end junior. Mi habilidad principal es el desarrollo con HTML, CSS, JavaScript y React.js, además de tener conocimientos en diversas librerías para estilos de CSS.Soy una persona proactiva, creativa y altamente motivada. Me encanta trabajar en equipo y aprender cosas nuevas, siempre estoy buscando maneras de mejorar y crecer profesionalmente. Mi mayor satisfacción es ver los proyectos en los que trabajo cobrar vida y lograr los objetivos que se han propuesto.Me considero un desarrollador detallista y apasionado por las nuevas tecnologías, lo que me permite estar al día en las últimas tendencias y novedades en el mundo del desarrollo web. Además, tengo una gran capacidad de adaptación y resolución de problemas, lo que me permite enfrentar nuevos desafíos con entusiasmo y confianza.</p>' +
+        '<h1>Tecnologias</h1>' +
+        '<div style="margin-bottom:1rem;">' +
+        '<img style="height:4rem" src="images/html.png" alt="" />' +
+        '<img style="height:4rem" src="images/css.png" alt="" />' +
+        '<img style="height:4rem" src="images/js.png" alt="" />' +
+        '<img style="height:4rem" src="images/react.png" alt="" />' +
+        '<img style="height:4rem" src="images/git.png" alt="" />' +
+        '<img style="height:4rem" src="images/github.png" alt="" />' +
+        '</div>' +
+        '</div>',
+      confirmButtonColor: "black",
+      confirmButtonText: "X",
+      height: "50vh",
+      background: '#fff',
+      showClass: {
+        popup: 'animate__animated animate__backInLeft'
+      },
+      hideClass: {
+        popup: 'animate__animated animate__fadeOutUp'
+      }
+    })
+  }
 
 	function contact(){
 		Swal.fire({
@@ -66,10 +93,16 @@ function HomePage() {
 		})
 	}
 
+
+
+
   return (
-    <div className="body">
-			<img className="avatar animate__animated animate__backInDown" src="images/guiño.gif" alt="" />
-      <h1 class="animate__animated animate__backInUp title">Hola, mi nombre es <h1 className="a">Rodrigo.</h1></h1>
+		<div className="body">
+		<img className="avatar animate__animated animate__backInDown" src="images/guiño.gif" alt="" />
+		<h1 className="animate__animated animate__backInUp title">
+			<AnimacionDeEscritura key={"hola"} texto="Hola, mi nombre es Rodrigo." />
+		</h1>
+		<br />	
 			<div className="flex2">
 				<motion.button onClick={acerca} whileTap={{scale:1.2}} className="animate__animated animate__bounceInLeft texto1 marginl marginr">Acerca de mi</motion.button>
 				<motion.button onClick={proyectos} whileTap={{scale:1.2}} className="animate__animated animate__zoomIn  texto1 marginl marginr">Proyectos</motion.button>
