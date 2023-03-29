@@ -22,6 +22,8 @@ function HomePage() {
 			'<img style="height:4rem" src="images/css.png" alt="" />'+
 			'<img style="height:4rem" src="images/js.png" alt="" />'+
 			'<img style="height:4rem" src="images/react.png" alt="" />'+
+			'<img style="height:4rem" src="images/git.png" alt="" />'+
+			'<img style="height:4rem" src="images/github.png" alt="" />'+
 			'<div/>',
 			confirmButtonColor:"black",
 			confirmButtonText:"X",

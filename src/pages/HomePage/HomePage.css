@@ -150,6 +150,7 @@ body{
 		bottom: 0;
 		width: 100%;
 		position: absolute;
+		margin-bottom: 1rem;
  }
 
 	.body{
@@ -159,12 +160,14 @@ body{
 	}
 
 	.png1{
-		width: 5%;
-		height: 5%;
+		width: 4vw;
+		margin-bottom: .5rem;
 	}
 
 	.b{
 		font-size: 1rem;
+		margin-left: .5rem;
+		margin-right: .5rem;
 	}
 
 	.width100{
