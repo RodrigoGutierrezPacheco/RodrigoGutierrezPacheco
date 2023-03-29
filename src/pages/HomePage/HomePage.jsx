@@ -4,6 +4,7 @@ import Swal from 'sweetalert2';
 import { motion } from 'framer-motion';
 import '../HomePage/HomePage.css'
 import 'animate.css';
+import Accordion from 'react-bootstrap/Accordion';
 
 const AnimacionDeEscritura = ({ texto }) => {
   const [textoActual, setTextoActual] = useState(" ");
@@ -42,7 +43,7 @@ function HomePage() {
     Swal.fire({
       html: ' <h1>Acerca de Mi.</h1>' +
         '<div style="height:20rem; text-align:justify; overflow: scroll;">' +
-        ' <p>¡Hola! Mi nombre es Rodrigo Gutierrez Pacheco y soy un apasionado desarrollador web front-end junior. Mi habilidad principal es el desarrollo con HTML, CSS, JavaScript y React.js, además de tener conocimientos en diversas librerías para estilos de CSS.Soy una persona proactiva, creativa y altamente motivada. Me encanta trabajar en equipo y aprender cosas nuevas, siempre estoy buscando maneras de mejorar y crecer profesionalmente. Mi mayor satisfacción es ver los proyectos en los que trabajo cobrar vida y lograr los objetivos que se han propuesto.Me considero un desarrollador detallista y apasionado por las nuevas tecnologías, lo que me permite estar al día en las últimas tendencias y novedades en el mundo del desarrollo web. Además, tengo una gran capacidad de adaptación y resolución de problemas, lo que me permite enfrentar nuevos desafíos con entusiasmo y confianza.</p>' +
+        ' <p>¡Hola! Mi nombre es Rodrigo y soy un apasionado desarrollador web front-end junior. Mi habilidad principal es el desarrollo con HTML, CSS, JavaScript y React.js, además de tener conocimientos en diversas librerías para estilos de CSS.Soy una persona proactiva, creativa y altamente motivada. Me encanta trabajar en equipo y aprender cosas nuevas, siempre estoy buscando maneras de mejorar y crecer profesionalmente. Mi mayor satisfacción es ver los proyectos en los que trabajo cobrar vida y lograr los objetivos que se han propuesto.Me considero un desarrollador detallista y apasionado por las nuevas tecnologías, lo que me permite estar al día en las últimas tendencias y novedades en el mundo del desarrollo web. Además, tengo una gran capacidad de adaptación y resolución de problemas, lo que me permite enfrentar nuevos desafíos con entusiasmo y confianza.</p>' +
         '<h1>Tecnologias</h1>' +
         '<div style="margin-bottom:1rem;">' +
         '<img style="height:4rem" src="images/html.png" alt="" />' +
@@ -100,18 +101,20 @@ function HomePage() {
   return (
 		<div className="body">
 		<img className="avatar animate__animated animate__backInDown" src="images/guiño.gif" alt="" />
-		<h1 className="animate__animated animate__backInUp title">
+		<h1 className=" title">
 			<AnimacionDeEscritura key={"hola"} texto="Hola, mi nombre es Rodrigo." />
 		</h1>
 		<br />	
 			<div className="flex2">
-				<motion.button onClick={acerca} whileTap={{scale:1.2}} className="animate__animated animate__bounceInLeft texto1 marginl marginr">Acerca de mi</motion.button>
-				<motion.button onClick={proyectos} whileTap={{scale:1.2}} className="animate__animated animate__zoomIn  texto1 marginl marginr">Proyectos</motion.button>
-				<motion.button onClick={contact} whileTap={{scale:1.2}} className="animate__animated animate__bounceInRight texto1 marginr marginl">Contacto</motion.button>
+				<motion.button onClick={acerca} whileTap={{scale:1.2}} className=" button animate__animated animate__bounceInLeft texto1 marginl marginr">Acerca de mi</motion.button>
+				<motion.button onClick={proyectos} whileTap={{scale:1.2}} className="button animate__animated animate__zoomIn  texto1 marginl marginr">Proyectos</motion.button>
+				<motion.button onClick={contact} whileTap={{scale:1.2}} className="button animate__animated animate__bounceInRight texto1 marginr marginl">Contacto</motion.button>
 			</div>
 			<div className="footer">
 			<motion.img style={{rotate}} src="images/code1.png" className='png1 marginl' alt="" />
-			<h1 className="b">Bienvenido a mi espacio.</h1>
+			<div className='bienvenido'>
+			 <AnimacionDeEscritura key={"hola"} texto="Bienvenido a mi espacio." />
+			</div>
 			<motion.img style={{rotate}} src="images/code1.png" className='png1 marginr' alt="" />
 			</div>
 
