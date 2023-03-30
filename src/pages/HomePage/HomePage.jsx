@@ -5,10 +5,12 @@ import { motion } from 'framer-motion';
 import '../HomePage/HomePage.css'
 import 'animate.css';
 import Accordion from 'react-bootstrap/Accordion';
+import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal';
 
 const AnimacionDeEscritura = ({ texto }) => {
   const [textoActual, setTextoActual] = useState(" ");
-		
+
   useEffect(() => {
     let i = -1;
     const timer = setInterval(() => {
@@ -39,33 +41,48 @@ function HomePage() {
   const time = useTime();
   const rotate = useTransform(time, [0, 4000], [0, 360], { clamp: false });	
 
-  function acerca() {
-    Swal.fire({
-      html: ' <h1>Acerca de Mi.</h1>' +
-        '<div style="height:20rem; text-align:justify; overflow: scroll;">' +
-        ' <p>¡Hola! Mi nombre es Rodrigo y soy un apasionado desarrollador web front-end junior. Mi habilidad principal es el desarrollo con HTML, CSS, JavaScript y React.js, además de tener conocimientos en diversas librerías para estilos de CSS.Soy una persona proactiva, creativa y altamente motivada. Me encanta trabajar en equipo y aprender cosas nuevas, siempre estoy buscando maneras de mejorar y crecer profesionalmente. Mi mayor satisfacción es ver los proyectos en los que trabajo cobrar vida y lograr los objetivos que se han propuesto.Me considero un desarrollador detallista y apasionado por las nuevas tecnologías, lo que me permite estar al día en las últimas tendencias y novedades en el mundo del desarrollo web. Además, tengo una gran capacidad de adaptación y resolución de problemas, lo que me permite enfrentar nuevos desafíos con entusiasmo y confianza.</p>' +
-        '<h1>Tecnologias</h1>' +
-        '<div style="margin-bottom:1rem;">' +
-        '<img style="height:4rem" src="images/html.png" alt="" />' +
-        '<img style="height:4rem" src="images/css.png" alt="" />' +
-        '<img style="height:4rem" src="images/js.png" alt="" />' +
-        '<img style="height:4rem" src="images/react.png" alt="" />' +
-        '<img style="height:4rem" src="images/git.png" alt="" />' +
-        '<img style="height:4rem" src="images/github.png" alt="" />' +
-        '</div>' +
-        '</div>',
-      confirmButtonColor: "black",
-      confirmButtonText: "X",
-      height: "50vh",
-      background: '#fff',
-      showClass: {
-        popup: 'animate__animated animate__backInLeft'
-      },
-      hideClass: {
-        popup: 'animate__animated animate__fadeOutUp'
-      }
-    })
-  }
+  // function acerca() {
+  //   Swal.fire({
+  //     html: 
+  //     confirmButtonColor: "black",
+  //     confirmButtonText: "X",
+  //     height: "50vh",
+  //     background: '#fff',
+  //     showClass: {
+  //       popup: 'animate__animated animate__backInLeft'
+  //     },
+  //     hideClass: {
+  //       popup: 'animate__animated animate__fadeOutUp'
+  //     }
+  //   })
+  // }
+
+	function proyectos(){
+		Swal.fire({
+			html:
+			'<div class="box2">' +
+			'<h1>Juego Retro para Computadora</h1>' +
+			'<div class="box1">' +
+			'<img class="imgPortada" src="images/vengeanceWars.jpg" alt="" />' +
+			'<div class="flex">' +
+			'<img class="imagen img1" src="images/html.png" alt="" />' +
+			'<img class="imagen img1" src="images/js.png" alt="" />' +
+			'<img class="imagen img1" src="images/css.png" alt="" />' +
+			'<img class="imagen img1" src="images/git.png" alt="" />' +
+			'</div>' +
+			'</div>' +
+			'</div>',
+			title: 'Proyectos',
+			confirmButtonColor:"black",
+			confirmButtonText:"Ok",
+			showClass: {
+				popup: 'animate__animated animate__backInDown'
+			},
+			hideClass: {
+				popup: 'animate__animated animate__bounceOut'
+			}
+		})
+	}
 
 	function contact(){
 		Swal.fire({
@@ -81,22 +98,49 @@ function HomePage() {
 		})
 	}
 
-	function proyectos(){
-		Swal.fire({
-			title: 'Proyectos',
-			confirmButtonColor:"black",
-			confirmButtonText:"Ok",
-			showClass: {
-				popup: 'animate__animated animate__backInDown'
-			},
-			hideClass: {
-				popup: 'animate__animated animate__bounceOut'
-			}
-		})
-	}
 
 
+  const [modalAbierto, setModalAbierto] = useState(false);
+	const [animacionSalida, setAnimacionSalida] = useState("");
 
+	const customStyles = {
+    content: {
+      animation: 'slideInLeft 1s ease',
+    },
+    overlay: {
+      backgroundColor: 'rgba(0, 0, 0, 0.7)',
+      zIndex: '999',
+    },
+  };
+
+	const abrirModal = () => {
+    setModalAbierto(true);
+    setAnimacionSalida("");
+  };
+
+	const cerrarModal = () => {
+    setModalAbierto(false);
+    setAnimacionSalida("slideOutLeft");
+  };
+
+  function handleShow(breakpoint) {
+    setFullscreen(breakpoint);
+    setShow(true);
+  }
+
+	const values = ['xxl-down'];
+  const [fullscreen, setFullscreen] = useState(true);
+  const [show, setShow] = useState(false);
+
+	const handleClose = () => {
+		const modalElement = document.querySelector('.modal-dialog');
+		modalElement.classList.add('slide-out-left');
+		setTimeout(() => {
+			setShow(false);
+		}, 1000); // el tiempo de espera debe ser igual al tiempo de la animación
+	};
+	
+	
 
   return (
 		<div className="body">
@@ -106,7 +150,17 @@ function HomePage() {
 		</h1>
 		<br />	
 			<div className="flex2">
-				<motion.button onClick={acerca} whileTap={{scale:1.2}} className=" button animate__animated animate__bounceInLeft texto1 marginl marginr">Acerca de mi</motion.button>
+			{values.map((v, idx) => (
+        <motion.button key={idx} className="me-2 mb-2 button marginr marginl" onClick={() => handleShow(v)}>
+          Acerca de mi
+        </motion.button>
+      ))}
+      <Modal onExit={handleClose} className='animate__animated animate__bounceInLeft slide-out-left' show={show} fullscreen={fullscreen} onHide={() => setShow(false)} animation={false} fade={"flip"}>
+        <Modal.Header closeButton>
+          <Modal.Title>Modal</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>Modal body content</Modal.Body>
+      </Modal>
 				<motion.button onClick={proyectos} whileTap={{scale:1.2}} className="button animate__animated animate__zoomIn  texto1 marginl marginr">Proyectos</motion.button>
 				<motion.button onClick={contact} whileTap={{scale:1.2}} className="button animate__animated animate__bounceInRight texto1 marginr marginl">Contacto</motion.button>
 			</div>
@@ -116,6 +170,9 @@ function HomePage() {
 			 <AnimacionDeEscritura key={"hola"} texto="Bienvenido a mi espacio." />
 			</div>
 			<motion.img style={{rotate}} src="images/code1.png" className='png1 marginr' alt="" />
+			</div>
+			<div>
+			
 			</div>
 
     </div>
