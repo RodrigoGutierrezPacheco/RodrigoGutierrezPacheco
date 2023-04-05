@@ -180,7 +180,7 @@ function HomePage() {
           Proyectos
         </motion.button>
       ))}
-      <Modal show={show2} fullscreen={fullscreen2} onHide={() => setShow2(false)}>
+      <Modal className='animate__animated animate__zoomIn' show={show2} fullscreen={fullscreen2} onHide={() => setShow2(false)} animation={false} fade={"flip"}>
         <Modal.Header closeButton>
           <Modal.Title>Proyectos</Modal.Title>
         </Modal.Header>
@@ -191,7 +191,7 @@ function HomePage() {
 					Contacto
         </motion.button>
       ))}
-      <Modal show={show3} fullscreen={fullscreen3} onHide={() => setShow3(false)}>
+      <Modal className='animate__animated animate__bounceInRight' show={show3} fullscreen={fullscreen3} onHide={() => setShow3(false)} animation={false} fade={"flip"}>
         <Modal.Header closeButton>
           <Modal.Title>Contacto</Modal.Title>
         </Modal.Header>
