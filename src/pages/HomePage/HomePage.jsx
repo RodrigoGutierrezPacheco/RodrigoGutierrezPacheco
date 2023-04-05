@@ -173,6 +173,16 @@ function HomePage() {
          Soy una persona proactiva, creativa y altamente motivada. Me encanta trabajar en equipo y aprender cosas nuevas, siempre estoy buscando maneras de mejorar y crecer profesionalmente. Mi mayor satisfacción es ver los proyectos en los que trabajo cobrar vida y lograr los objetivos que se han propuesto.
 
         Me considero un desarrollador detallista y apasionado por las nuevas tecnologías, lo que me permite estar al día en las últimas tendencias y novedades en el mundo del desarrollo web. Además, tengo una gran capacidad de adaptación y resolución de problemas, lo que me permite enfrentar nuevos desafíos con entusiasmo y confianza.
+				<h1>Tecnologias</h1>
+				<div className='flex2'>
+					<img className='png' src="images/html.png" alt="" />
+					<img className='png' src="images/css.png" alt="" />
+					<img className='png' src="images/js.png" alt="" />
+					<img className='png' src="images/react.png" alt="" />
+					<img className='png' src="images/git.png" alt="" />
+					<img className='png' src="images/github.png" alt="" />
+
+				</div>
 				</Modal.Body>
       </Modal> 
 			  {values2.map((v, idx) => (

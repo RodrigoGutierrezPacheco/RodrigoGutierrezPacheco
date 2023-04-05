@@ -40,6 +40,13 @@ body{
 		flex-direction: column;
 	}
 
+	.flex2{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+	}
+
 	.x{
 		width: 5vw;
 		margin-right:1rem;
@@ -80,11 +87,11 @@ body{
 
 
 	.png{
-		width: 20vw;
+		width: 10vw;
 		display: block;
 		margin: auto;
 		margin-top: 2rem;
-		justify-content: center;
+		justify-content: flex-start;
 		align-items: center;
 		position: relative;
 	}
