@@ -7,6 +7,7 @@ import 'animate.css';
 import Accordion from 'react-bootstrap/Accordion';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
+import Card from 'react-bootstrap/Card';
 
 const AnimacionDeEscritura = ({ texto }) => {
   const [textoActual, setTextoActual] = useState(" ");
@@ -165,10 +166,10 @@ function HomePage() {
         </motion.button>
       ))}
       <Modal className='animate__animated animate__bounceInLeft slide-out-left' show={show1} fullscreen={fullscreen1} onHide={() => setShow1(false)} animation={false} fade={"flip"}>
-        <Modal.Header closeButton>
+          <Modal.Header closeButton>
           <Modal.Title>Acerca de mi</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>¡Hola! Mi nombre es Rodrigo Gutierrez Pacheco y soy un apasionado desarrollador web front-end junior. Mi habilidad principal es el desarrollo con HTML, CSS, JavaScript y React.js, además de tener conocimientos en diversas librerías para estilos de CSS.
+        </Modal.Header> 
+        <Modal.Body closeButton>¡Hola! Mi nombre es Rodrigo Gutierrez Pacheco y soy un apasionado desarrollador web front-end junior. Mi habilidad principal es el desarrollo con HTML, CSS, JavaScript y React.js, además de tener conocimientos en diversas librerías para estilos de CSS.
 
          Soy una persona proactiva, creativa y altamente motivada. Me encanta trabajar en equipo y aprender cosas nuevas, siempre estoy buscando maneras de mejorar y crecer profesionalmente. Mi mayor satisfacción es ver los proyectos en los que trabajo cobrar vida y lograr los objetivos que se han propuesto.
 
@@ -181,7 +182,6 @@ function HomePage() {
 					<img className='png' src="images/react.png" alt="" />
 					<img className='png' src="images/git.png" alt="" />
 					<img className='png' src="images/github.png" alt="" />
-
 				</div>
 				</Modal.Body>
       </Modal> 
@@ -194,7 +194,36 @@ function HomePage() {
         <Modal.Header closeButton>
           <Modal.Title>Proyectos</Modal.Title>
         </Modal.Header>
-        <Modal.Body>Modal body content</Modal.Body>
+        <Modal.Body>
+					<div>
+					<div class="card">
+  <div className="card-header">
+    <h2 className="card-title">BeautyyMx</h2>
+  </div>
+  <div className="card-body">
+    <div className="card-image">
+      <img src="images/beautyLogo.png" alt="Imagen del sitio" />
+    </div>
+    <div className="card-description">
+      <p>Sitio web para la compra de maquillaje.</p>
+    </div>
+    <div className="card-technologies">
+      <p>Tecnologías utilizadas:</p>
+			<div className='flex2'>
+					<img className='png' src="images/html.png" alt="" />
+					<img className='png' src="images/css.png" alt="" />
+					<img className='png' src="images/js.png" alt="" />
+					<img className='png' src="images/react.png" alt="" />
+					<img className='png' src="images/git.png" alt="" />
+					<img className='png' src="images/github.png" alt="" />
+				</div>   
+				 </div>
+				 <button className='btn btn-primary mt-2'>Visita la pagina</button>
+  </div>
+</div>
+
+					</div>
+				</Modal.Body>
       </Modal>
        {values3.map((v, idx) => (
         <motion.button key={idx} className="button animate__animated animate__bounceInRight texto1 marginr marginl" onClick={() => handleShow3(v)}>
