@@ -123,24 +123,33 @@ function HomePage() {
     setAnimacionSalida("slideOutLeft");
   };
 
-  function handleShow(breakpoint) {
-    setFullscreen(breakpoint);
-    setShow(true);
-  }
+ //Modal 1
+ const values1 = ['xxl-down'];
+ const [fullscreen1, setFullscreen1] = useState(true);
+ const [show1, setShow1] = useState(false);
+ function handleShow1(breakpoint) {
+	setFullscreen1(breakpoint);
+	setShow1(true);
+}
 
-	const values = ['xxl-down'];
-  const [fullscreen, setFullscreen] = useState(true);
-  const [show, setShow] = useState(false);
+ //Modal 2
+ const values2 = ['xxl-down'];
+ const [fullscreen2, setFullscreen2] = useState(true);
+ const [show2, setShow2] = useState(false);
+ function handleShow2(breakpoint) {
+	setFullscreen2(breakpoint);
+	setShow2(true);
+}
 
-	const handleClose = () => {
-		const modalElement = document.querySelector('.modal-dialog');
-		modalElement.classList.add('slide-out-left');
-		setTimeout(() => {
-			setShow(false);
-		}, 1000); // el tiempo de espera debe ser igual al tiempo de la animación
-	};
-	
-	
+ //Modal 3
+ const values3 = ['xxl-down'];
+ const [fullscreen3, setFullscreen3] = useState(true);
+ const [show3, setShow3] = useState(false);
+ function handleShow3(breakpoint) {
+	setFullscreen3(breakpoint);
+	setShow3(true);
+}
+
 
   return (
 		<div className="body">
@@ -150,19 +159,45 @@ function HomePage() {
 		</h1>
 		<br />	
 			<div className="flex2">
-			{values.map((v, idx) => (
-        <motion.button key={idx} className="me-2 mb-2 button marginr marginl" onClick={() => handleShow(v)}>
+			 {values1.map((v, idx) => (
+        <motion.button key={idx} className="me-2 mb-2 button marginr marginl animate__animated animate__bounceInLeft" onClick={() => handleShow1(v)}>
           Acerca de mi
         </motion.button>
       ))}
-      <Modal onExit={handleClose} className='animate__animated animate__bounceInLeft slide-out-left' show={show} fullscreen={fullscreen} onHide={() => setShow(false)} animation={false} fade={"flip"}>
+      <Modal className='animate__animated animate__bounceInLeft slide-out-left' show={show1} fullscreen={fullscreen1} onHide={() => setShow1(false)} animation={false} fade={"flip"}>
         <Modal.Header closeButton>
-          <Modal.Title>Modal</Modal.Title>
+          <Modal.Title>Acerca de mi</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>¡Hola! Mi nombre es Rodrigo Gutierrez Pacheco y soy un apasionado desarrollador web front-end junior. Mi habilidad principal es el desarrollo con HTML, CSS, JavaScript y React.js, además de tener conocimientos en diversas librerías para estilos de CSS.
+
+         Soy una persona proactiva, creativa y altamente motivada. Me encanta trabajar en equipo y aprender cosas nuevas, siempre estoy buscando maneras de mejorar y crecer profesionalmente. Mi mayor satisfacción es ver los proyectos en los que trabajo cobrar vida y lograr los objetivos que se han propuesto.
+
+        Me considero un desarrollador detallista y apasionado por las nuevas tecnologías, lo que me permite estar al día en las últimas tendencias y novedades en el mundo del desarrollo web. Además, tengo una gran capacidad de adaptación y resolución de problemas, lo que me permite enfrentar nuevos desafíos con entusiasmo y confianza.
+				</Modal.Body>
+      </Modal> 
+			  {values2.map((v, idx) => (
+        <motion.button key={idx} className="button animate__animated animate__zoomIn  texto1 marginl marginr" onClick={() => handleShow2(v)}>
+          Proyectos
+        </motion.button>
+      ))}
+      <Modal show={show2} fullscreen={fullscreen2} onHide={() => setShow2(false)}>
+        <Modal.Header closeButton>
+          <Modal.Title>Proyectos</Modal.Title>
         </Modal.Header>
         <Modal.Body>Modal body content</Modal.Body>
       </Modal>
-				<motion.button onClick={proyectos} whileTap={{scale:1.2}} className="button animate__animated animate__zoomIn  texto1 marginl marginr">Proyectos</motion.button>
-				<motion.button onClick={contact} whileTap={{scale:1.2}} className="button animate__animated animate__bounceInRight texto1 marginr marginl">Contacto</motion.button>
+       {values3.map((v, idx) => (
+        <motion.button key={idx} className="button animate__animated animate__bounceInRight texto1 marginr marginl" onClick={() => handleShow3(v)}>
+					Contacto
+        </motion.button>
+      ))}
+      <Modal show={show3} fullscreen={fullscreen3} onHide={() => setShow3(false)}>
+        <Modal.Header closeButton>
+          <Modal.Title>Contacto</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>Modal body content</Modal.Body>
+      </Modal>  
+
 			</div>
 			<div className="footer">
 			<motion.img style={{rotate}} src="images/code1.png" className='png1 marginl' alt="" />
@@ -179,4 +214,5 @@ function HomePage() {
   );
 }
 
+{/* <motion.button onClick={contact} whileTap={{scale:1.2}} className="button animate__animated animate__bounceInRight texto1 marginr marginl">Contacto</motion.button> */}
 export default HomePage;
