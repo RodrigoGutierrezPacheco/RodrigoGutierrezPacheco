@@ -196,13 +196,35 @@ function HomePage() {
         </Modal.Header>
         <Modal.Body>
 					<div>
-					<div class="card">
+						<div className='card1'>
+							<header className='header'>
+							<h1>Beautyy Mx</h1>
+							<p className='p'>-App web movil para la venta de maquillaje online</p>
+							</header>
+							<div className='flex3'>
+								<img className='png2' src="images/beautyLogo.png" alt="" />
+								<div className='card-tecnologias'>
+									<h1 className='marginr marginl'>Tecnologias</h1>
+									<div className='flex2'>
+					<img className='png' src="images/html.png" alt="" />
+					<img className='png' src="images/css.png" alt="" />
+					<img className='png' src="images/js.png" alt="" />
+					<img className='png' src="images/react.png" alt="" />
+					<img className='png' src="images/git.png" alt="" />
+					<img className='png' src="images/github.png" alt="" />
+					<img className="png" src="images/bootstrap.png" alt="" />
+				</div>   
+								</div>
+							</div>
+				<button className='btn btn-primary'>Visitar Pagina</button>
+						</div>
+					{/* <div class="card">
   <div className="card-header">
     <h2 className="card-title">BeautyyMx</h2>
   </div>
   <div className="card-body">
     <div className="card-image">
-      <img src="images/beautyLogo.png" alt="Imagen del sitio" />
+      <img className='png2' src="images/beautyLogo.png" alt="Imagen del sitio" />
     </div>
     <div className="card-description">
       <p>Sitio web para la compra de maquillaje.</p>
@@ -216,11 +238,38 @@ function HomePage() {
 					<img className='png' src="images/react.png" alt="" />
 					<img className='png' src="images/git.png" alt="" />
 					<img className='png' src="images/github.png" alt="" />
+					<img className="png" src="images/bootstrap.png" alt="" />
 				</div>   
 				 </div>
 				 <button className='btn btn-primary mt-2'>Visita la pagina</button>
   </div>
-</div>
+</div> */}
+{/* <div class="card">
+  <div className="card-header">
+    <h2 className="card-title">BeautyyMx</h2>
+  </div>
+  <div className="card-body">
+    <div className="card-image">
+      <img className='png2' src="images/beautyLogo.png" alt="Imagen del sitio" />
+    </div>
+    <div className="card-description">
+      <p>Sitio web para la compra de maquillaje.</p>
+    </div>
+    <div className="card-technologies">
+      <p>Tecnologías utilizadas:</p>
+			<div className='flex2'>
+					<img className='png' src="images/html.png" alt="" />
+					<img className='png' src="images/css.png" alt="" />
+					<img className='png' src="images/js.png" alt="" />
+					<img className='png' src="images/react.png" alt="" />
+					<img className='png' src="images/git.png" alt="" />
+					<img className='png' src="images/github.png" alt="" />
+					<img className="png" src="images/bootstrap.png" alt="" />
+				</div>   
+				 </div>
+				 <button className='btn btn-primary mt-2'>Visita la pagina</button>
+  </div>
+</div> */}
 
 					</div>
 				</Modal.Body>
