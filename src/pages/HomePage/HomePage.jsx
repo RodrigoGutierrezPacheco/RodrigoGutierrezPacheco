@@ -72,7 +72,7 @@ const HomePage = () => {
 					</div>
 				</div>
 			</div>
-			<h1 className='olivo start'>&lt;/Hard<span className='blanco'>Skills&gt;</span></h1>
+			<h1 className='olivo1 start'>&lt;/Hard<span className='blanco1'>Skills&gt;</span></h1>
 			<div></div>
 		</skills>
 		</div>

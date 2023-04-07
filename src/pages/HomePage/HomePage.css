@@ -104,9 +104,21 @@
 		font-weight: 700;
 	}
 
+	.blanco1{
+		color: rgba(255, 255, 255, .3);
+		font-weight: 700;
+		font-size: 1rem;
+	}
+
 	.olivo{
 		color: #556B2F;
 		font-weight: 700;
+	}
+
+	.olivo1{
+		color: rgba(85, 107, 47, .3);
+		font-weight: 700;
+		font-size: 1rem;
 	}
 
 	.btn-header1{
