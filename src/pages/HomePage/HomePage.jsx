@@ -73,7 +73,20 @@ const HomePage = () => {
 				</div>
 			</div>
 			<h1 className='olivo1 start'>&lt;/Hard<span className='blanco1'>Skills&gt;</span></h1>
-			<div></div>
+			<div>
+			<h1 className='olivo start hard'>&lt;Soft<span className='blanco'>Skills&gt;</span></h1>
+			<div className='wrap1'>
+				<h1 className='soft'>&lt;Comunicacion/&gt;</h1>
+				<h1 className='soft'>&lt;Liderazgo/&gt;</h1>
+				<h1 className='soft'>&lt;Trabajo en equipo/&gt;</h1>
+				<h1 className='soft'>&lt;Creatividad/&gt;</h1>
+				<h1 className='soft'>&lt;Adaptabilidad/&gt;</h1>
+				<h1 className='soft'>&lt;Resolucion de problemas/&gt;</h1>
+				<h1 className='soft'>&lt;Autodisciplina/&gt;</h1>
+				<h1 className='soft'>&lt;Autodidacta/&gt;</h1>
+			</div>
+			<h1 className='olivo1 start'>&lt;/soft<span className='blanco1'>Skills&gt;</span></h1>
+			</div>
 		</skills>
 		</div>
 	)

@@ -134,6 +134,15 @@
 		justify-content: center;
 	}
 
+	.soft{
+		color: white;
+		background-color: rgba(85, 107, 47, .4);
+		margin-left: .5rem;
+		border-radius: .4rem;
+		font-size: 1rem;
+		padding: .3rem;
+	}
+
 	.header{
 		display: flex;
 		flex-direction: column;
@@ -164,6 +173,11 @@
 	.wrap{
 		display: flex;
 		flex-wrap: wrap;
+	}
+	.wrap1{
+		display: flex;
+		flex-wrap: wrap;
+		width: 95vw;
 	}
 
 	.line{
