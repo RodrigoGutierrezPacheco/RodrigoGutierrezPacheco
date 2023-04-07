@@ -25,16 +25,48 @@ const HomePage = () => {
 				<img className='guiño' src="images/guiño.gif" alt="" />
 			</div>
 			</div>
-			<div className='header1'>
+			<div className='header2'>
 				<div className='width'>
 					<h1 className='header-text-2 text-shadow'>Acerca de mi :</h1>
-					<button className='btn-header'>CV <img className='png-header1' src="images/documento.png" alt="" /></button>
+					<button className='btn-header1'>CV <img className='png-header1' src="images/documento.png" alt="" /></button>
 				</div>
 				<div className='scroll'>
 					<section className='header-text'>Soy un desarrollador fronten Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat, et! Dolores quod fuga fugit voluptatum, saepe impedit, nam magni corrupti est nihil deserunt nulla, rem exercitationem earum! Atque, explicabo voluptatem!</section>
 				</div>
 			</div>
 		</header>
+		<skills className="header">
+			<div className='header1'>
+				<div className='width'>
+					<h1 className='blanco'>HardSkills</h1>
+					<img className='codigoPng' src="images/codigo.png" alt="" />
+				</div>
+				<div className='scroll1'>
+					<div className='header1 width line'>
+						<img className='png marginr marginb' src="images/html.png" alt="" />
+						<h1 className='blanco'>HTML</h1>
+					</div>
+					<div className='header1 width line'>
+						<img className='png marginr marginb' src="images/css.png" alt="" />
+						<h1 className='blanco'>CSS</h1>
+					</div>
+					<div className='header1 width line'>
+						<img className='png marginr marginb' src="images/js.png" alt="" />
+						<h1 className='blanco'>JavaScript</h1>
+					</div>
+					<div className='header1 width line'>
+						<img className='png marginr marginb' src="images/react.png" alt="" />
+						<h1 className='blanco'>React.JS</h1>
+					</div>
+					<div className='header1 width line'>
+						<img className='png marginr marginb' src="images/git.png" alt="" />
+						<h1 className='blanco'>GIT</h1>
+					</div>
+				</div>
+			</div>
+					<h1 className='blanco start'>HardSkills</h1>
+			<div></div>
+		</skills>
 		</div>
 	)
 }

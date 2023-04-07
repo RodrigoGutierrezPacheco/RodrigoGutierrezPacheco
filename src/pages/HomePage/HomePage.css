@@ -48,9 +48,16 @@
 		width: 45vw;
 	}
 
+
+
 	.png-header{
 		width: 5vw;
 	}
+
+	.png{
+		width: 10vw !important;
+	}
+
 
 	.png-header1{
 		width: 5vw;
@@ -82,6 +89,34 @@
 		padding: .4rem;
 	}
 
+	.codigoPng{
+		width: 30vw;
+	}
+
+
+	.blanco{
+		color: white;
+		font-weight: 700;
+	}
+
+	.olivo{
+		color: #556B2F;
+		font-weight: 700;
+	}
+
+	.btn-header1{
+		background-color: rgba(52, 52, 52, .8);
+		color: white;
+		border:7px solid #556B2F;
+		border-radius: 1rem;
+		display: flex;
+		font-size: 1.4rem;
+		font-weight: 700;
+		padding: .4rem;
+		width: 30vw;
+		justify-content: center;
+	}
+
 	.header{
 		display: flex;
 		flex-direction: column;
@@ -98,8 +133,52 @@
 		display: flex;
 	}
 
+	.start{
+		text-align: start;
+	}
+
+	.container{
+		background-color: rgba(71, 71, 71, 1);
+		width: 20vw !important;
+		padding: 1rem;
+		border-radius: 1rem;
+	}
+
+	.wrap{
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.line{
+		border-bottom: .3rem solid rgba(85, 107, 47, 1);
+		margin-bottom: 1.5rem;
+	}
+
+	.marginb{
+		margin-bottom: 1rem;
+	}
+
+	.marginr{
+		margin-right: 1rem;
+	}
+
+	.row{
+		display: flex !important;
+		flex-direction: row !important;
+	}
+
+	.header2{
+		display: flex;
+		margin-top: 1rem;
+	}
 	.scroll{
 		height: 20vh;
+		overflow: scroll;
+		overflow-x: hidden;
+	}
+
+	.scroll1{
+		height: 50vh;
 		overflow: scroll;
 		overflow-x: hidden;
 	}
