@@ -1,362 +1,109 @@
-.imgPortada{
-	width: 50%;
-}
-
-.flex{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-
-.imagen{
-	width: 50%;
-}
-
-body{
-	background-color: rgb(255, 255, 255);
-	color: rgb(0, 0, 0);
-}
-
-@media (max-width:5000px){
-	.code{
-		width: 5%;
-		margin-bottom: 10%;
+.body{
+	background-color: #1E1E1E;
+	position: absolute;
+	width: 100%;
+	top: 0;
+	overflow-x: hidden;
 	}
-	
-	.menu{
-		width: 10%;
-		margin-left: 30%;
-	}
-	
-	.flex{
-		display:flex;
-		flex-wrap: wrap;
-		width: 100%;
-	}
- 
-	.header{
+
+	.nav{
+		color: white;
 		display: flex;
 		flex-direction: row;
 		justify-content: space-around;
-		border-bottom: 2px solid black;
-		width: 100%;
-	}
-
-	.card {
-		border: 1px solid #ccc;
-		border-radius: 10px;
-		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-		width: 20rem;
-		display: flex;
-		flex-direction: column;
-		margin-right: auto;
-		margin-left: auto;
-		margin-bottom: 1rem;
-		justify-content: flex-start;
-	}
-	
-	.card-header {
-		background-color: #f7f7f7;
-		border-bottom: 1px solid #ccc;
-		padding: 10px;
-	}
-	
-	.card-title {
-		font-size: 24px;
-		margin: 0;
-	}
-	
-	.card-body {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
-		padding: 20px;
-	}
-	
-	.card-image {
-		margin-right: 20px;
-		max-width: 300px;
-	}
-	
-	.card-image img {
-		max-width: 100%;
-		height: auto;
-	}
-	
-	.card-description p {
-		margin-bottom: 20px;
-	}
-	
-	.card-technologies p {
-		font-weight: bold;
-		margin-bottom: 10px;
-	}
-	
-	.card-technologies ul {
-		list-style-type: none;
-		margin: 0;
-		padding: 0;
-	}
-	
-	.card-technologies li {
-		display: inline-block;
-		margin-right: 10px;
-	}
-	
-
-	.card1{
-		border: 2px solid black;
-		border-radius: .2rem;
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
-	}
-
-	.flex1{
-		display: flex;
-		flex-direction: column;
-	}
-
-	.flex2{
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		justify-content: flex-start;
-	}
-
-	.flex3{
-		display: flex;
-		flex-direction: row;
-	}
-
-	.x{
-		width: 5vw;
-		margin-right:1rem;
-	}
-
-	.x1{
-		margin-left: 45%;
-		background-color: black;
-		color: white;
-		margin-top: .5rem;
-		border: 2px solid black;
-		border-radius: .4rem;
-	}
-
-	
-	
-	.avatar{
-		width: 30%;
-	}
-
-	.avatar1{
-		width: 50%;
-	}
-
-	.info{
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
-		width: 100vw;
-	}
-
-	.title{
-		width: 45vw;
-		margin-left: auto;
-		margin-right: auto;
-		font-weight: 800;
-	}
-
-
-	.png{
-		width: 10vw;
-		display: block;
-		margin: auto;
-		margin-top: 2rem;
-		justify-content: flex-start;
-		align-items: center;
-		position: relative;
-	}
-
-	.one{
-		/* background-color: #003785; */
-		width: 50vw;
-		height: 20vh;
-	}
-
-	.two{
-		/* background-color: #1465bb; */
-		width: 50vw;
-		height: 20vh;
-	}
-
-	.three{
-		/* background-color: #2196f3; */
-		width: 50vw;
-		height: 20vh;
-		margin-top: 2rem;
-	}
-
-	.four{
-		/* background-color: #81c9fa; */
-		width: 50vw;
-		height: 20vh;
-		margin-top: 2rem;
-	}
-
-	.Modal{
-		color: rgb(0, 0, 0);
-		height: 100%;
-	}
-
-	.h1{
-		color: black;
-	}
-
-	.a{
-		text-decoration: none;
-		color: rgb(255, 0, 0);
-		font-weight: 800;
-		font-size: 2rem;
-		margin-bottom: 20%;
-	}
-
-	.texto1{
-		font-size: 1rem;
-		font-weight: 700;
-	}
-
-	.marginl{
-		margin-left: auto;
-	}
-
-	.marginr{
-		margin-right: auto;
-	}
-	.flex-column{
-		display: flex;
-	}
-
-	.flex2{
-		display: flex;
-		flex-direction: row;		
-	}
-
-	.footer{
-		display: flex;
-		margin-left: auto;
-		margin-right: auto;
-		bottom: 0;
-		width: 100%;
-		position: absolute;
-		margin-bottom: 1rem;
- }
-
- .button{
-	width: 30%;
-	height: 8vh;
-	font-weight: 700;
- }
-
-	.body{
-   margin: 0px;
-	 padding: 0px;
-	 height: 100%;
-	}
-
-	.box1{
-		display: flex;
-		flex-direction: row;
+		background-color:rgba(0, 0, 0, .4);
+		border-radius: 2rem;
+		margin-top: 1rem;
 		width: 95vw;
-		margin-left: auto;
 		margin-right: auto;
+		margin-left: auto;
+		padding: .2rem;
 	}
 
-	.box2{
-		border: 2px solid black;
+	.nav-text{
+		font-size: 1.1rem;
 	}
 
-	.bienvenido{
-		color: black;
+	.header-text{
+		color: white;
+		font-weight: 700;
+		width: 45vw;
+		text-align: start;
+		line-height: 1.2;
+	}
+
+	.header-text-1{
+		color: #556B2F;
 		font-weight: 700;
 	}
 
-	.png1{
-		width: 4vw;
-		margin-bottom: .5rem;
+	.header-text-2{
+		color: white;
+		font-weight: 700;
+		width: 30vw;
+		text-align: start;
 	}
 
-	.png2{
+	.width{
+		width: 45vw;
+	}
+
+	.png-header{
+		width: 5vw;
+	}
+
+	.png-header1{
+		width: 5vw;
+		margin-left: 1rem;
+		margin-top: .3rem;
+	}
+
+	.text-shadow{
+		text-shadow: 2px 2px 4px rgba(85, 107, 47, .4);
+	}
+
+	.header-png{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		width: 30vw;
+		margin-top: 2rem;
+		margin-bottom: 2rem;
+	}
+
+	.btn-header{
+		background-color: rgba(52, 52, 52, .8);
+		color: white;
+		border:7px solid #556B2F;
+		border-radius: 1rem;
+		display: flex;
+		font-size: 1.4rem;
+		font-weight: 700;
+		padding: .4rem;
+	}
+
+	.header{
+		display: flex;
+		flex-direction: column;
+		width: 95vw;
+		margin-right: auto;
+		margin-left: auto;
+		background-color: rgba(0, 0, 0, .2);
+		border-radius: 2rem;
+		margin-top: 1rem;
+		padding: 1rem;
+	}
+
+	.header1{
+		display: flex;
+	}
+
+	.scroll{
+		height: 20vh;
+		overflow: scroll;
+		overflow-x: hidden;
+	}
+
+	.guiño{
 		width: 50vw;
 	}
-
-	.p{
-		width: 40vw;
-	}
-
-
-
-	.img{
-		width: 60vw;
-	}
-
-	.img1{
-		width: 10vw;
-	}
-
-	.tecnologias{
-		margin-bottom: 1rem;
-	}
-
-	.b{
-		font-size: 1rem;
-		margin-left: .5rem;
-		margin-right: .5rem;
-	}
-
-	.btn{
-		margin-left: auto;
-		margin-right: auto;
-		margin-bottom: 1rem;
-		background-color: rgb(255, 0, 0);
-		border: none;
-	}
-
-	.width100{
-		width: 100vw;
-	}
-
-	.slide-out-left {
-		animation: slideOutLeft 10s;
-	}
-	
-	@keyframes slideOutLeft {
-		from {
-			transform: translateX(0);
-		}
-		to {
-			transform: translateX(-100%);
-		}
-	}
-	
-
-	.modalAcerca{
-		background-color: black;
-		color: white;
-		height: 100vh;
-	}
-
-	.h2{
-		overflow: scroll;
-		height: 100px;
-		color: red;
-	}
-
-	.rojo{
-		color: red;
-	}
-
-
-
-}
