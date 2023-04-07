@@ -48,7 +48,19 @@
 		width: 45vw;
 	}
 
+	.line-height{
+		line-height: 3;
+	}
 
+	.btnVisitar{
+		background-color: rgba(255, 255, 255, .4);
+		color: white;
+		font-size: 1.5rem;
+		margin-top: 1.5rem;
+		border: none;
+		border-radius: .5rem;
+		width: 30vw;
+	}
 
 	.png-header{
 		width: 5vw;
@@ -56,6 +68,10 @@
 
 	.png{
 		width: 10vw !important;
+	}
+
+	.png1{
+		width: 5vw !important;
 	}
 
 
@@ -155,6 +171,16 @@
 		padding: 1rem;
 	}
 
+	.header2{
+		display: flex;
+		flex-direction: row;
+		width: 90vw;
+		margin-right: auto;
+		margin-left: auto;
+		border-radius: 2rem;
+		margin-top: 1rem;
+	}
+
 	.header1{
 		display: flex;
 	}
@@ -168,6 +194,22 @@
 		width: 20vw !important;
 		padding: 1rem;
 		border-radius: 1rem;
+	}
+
+	.space{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.container1{
+		background-color: rgba(0, 0, 0, .2);
+		width: 90vw !important;
+		margin-right: auto;
+		margin-left: auto;
+		padding: 1rem;
+		border-radius: 1rem;
+		margin-top: 1rem;
 	}
 
 	.wrap{

@@ -70,6 +70,10 @@ const HomePage = () => {
 						<img className='png marginr marginb' src="images/github.png" alt="" />
 						<h1 className='blanco fontSize1'>GitHub</h1>
 					</div>
+					<div className='header1 width line'>
+						<img className='png marginr marginb' src="images/figma.png" alt="" />
+						<h1 className='blanco fontSize1'>Figma</h1>
+					</div>
 				</div>
 			</div>
 			<h1 className='olivo1 start'>&lt;/Hard<span className='blanco1'>Skills&gt;</span></h1>
@@ -85,9 +89,51 @@ const HomePage = () => {
 				<h1 className='soft'>&lt;Autodisciplina/&gt;</h1>
 				<h1 className='soft'>&lt;Autodidacta/&gt;</h1>
 			</div>
-			<h1 className='olivo1 start'>&lt;/soft<span className='blanco1'>Skills&gt;</span></h1>
+			<h1 className='olivo1 start'>&lt;/Soft<span className='blanco1'>Skills&gt;</span></h1>
 			</div>
 		</skills>
+		<proyectos className="header">
+		<h1 className='olivo start hard'>&lt;Proye<span className='blanco'>ctos&gt;</span></h1>
+			<div className='container1'>
+				<div className='space'>
+					<img className='png1' src="images/beautyLogo.png" alt="" />
+					<img className='png1' src="images/github.png" alt="" />
+				</div>
+				<h1 className='blanco start line-height'>Beautyy-Mx Ecommerce</h1>
+				<h1 className='blanco1 start marginb'>Ecommerce para la venta de maquillaje, cuidado de la piel y accesorios.</h1>
+			<div className='row'>
+				<img className='png' src="images/html.png" alt="" />
+				<img className='png' src="images/css.png" alt="" />
+				<img className='png' src="images/js.png" alt="" />
+				<img className='png' src="images/react.png" alt="" />
+				<img className='png' src="images/git.png" alt="" />
+				<img className='png' src="images/bootstrap.png" alt="" />
+				<img className='png' src="images/node.png" alt="" />
+				<img className='png' src="images/npm.png" alt="" />
+			</div>
+			<button className='btnVisitar'>Visitar</button>
+			</div>
+			<div className='container1'>
+				<div className='space'>
+					<img className='png1' src="images/abeja.png" alt="" />
+					<img className='png1' src="images/github.png" alt="" />
+				</div>
+				<h1 className='blanco start line-height'>Agropecuaria-La Isla Ecommerce</h1>
+				<h1 className='blanco1 start marginb'>Ecommerce para la venta de miel y productos naturales.</h1>
+			<div className='row'>
+				<img className='png' src="images/html.png" alt="" />
+				<img className='png' src="images/css.png" alt="" />
+				<img className='png' src="images/js.png" alt="" />
+				<img className='png' src="images/react.png" alt="" />
+				<img className='png' src="images/git.png" alt="" />
+				<img className='png' src="images/bootstrap.png" alt="" />
+				<img className='png' src="images/node.png" alt="" />
+				<img className='png' src="images/npm.png" alt="" />
+			</div>
+			<button className='btnVisitar'>Visitar</button>
+			</div>
+			<h1 className='olivo1 start'>&lt;/Proye<span className='blanco1'>ctos&gt;</span></h1>
+		</proyectos>
 		</div>
 	)
 }
