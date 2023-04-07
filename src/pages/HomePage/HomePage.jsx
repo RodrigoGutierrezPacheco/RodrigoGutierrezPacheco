@@ -38,33 +38,41 @@ const HomePage = () => {
 		<skills className="header">
 			<div className='header1'>
 				<div className='width'>
-					<h1 className='blanco'>HardSkills</h1>
+					<h1 className='olivo start hard'>&lt;Hard <br /><span className='blanco'>Skills&gt;</span></h1>
 					<img className='codigoPng' src="images/codigo.png" alt="" />
 				</div>
 				<div className='scroll1'>
 					<div className='header1 width line'>
 						<img className='png marginr marginb' src="images/html.png" alt="" />
-						<h1 className='blanco'>HTML</h1>
+						<h1 className='blanco fontSize1'>HTML</h1>
 					</div>
 					<div className='header1 width line'>
 						<img className='png marginr marginb' src="images/css.png" alt="" />
-						<h1 className='blanco'>CSS</h1>
+						<h1 className='blanco fontSize1'>CSS</h1>
 					</div>
 					<div className='header1 width line'>
 						<img className='png marginr marginb' src="images/js.png" alt="" />
-						<h1 className='blanco'>JavaScript</h1>
+						<h1 className='blanco fontSize1'>JavaScript</h1>
 					</div>
 					<div className='header1 width line'>
 						<img className='png marginr marginb' src="images/react.png" alt="" />
-						<h1 className='blanco'>React.JS</h1>
+						<h1 className='blanco fontSize1'>React.JS</h1>
 					</div>
 					<div className='header1 width line'>
 						<img className='png marginr marginb' src="images/git.png" alt="" />
-						<h1 className='blanco'>GIT</h1>
+						<h1 className='blanco fontSize1'>GIT</h1>
+					</div>
+					<div className='header1 width line'>
+						<img className='png marginr marginb' src="images/bootstrap.png" alt="" />
+						<h1 className='blanco fontSize1'>Bootstrap</h1>
+					</div>
+					<div className='header1 width line'>
+						<img className='png marginr marginb' src="images/github.png" alt="" />
+						<h1 className='blanco fontSize1'>GitHub</h1>
 					</div>
 				</div>
 			</div>
-					<h1 className='blanco start'>HardSkills</h1>
+			<h1 className='olivo start'>&lt;/Hard<span className='blanco'>Skills&gt;</span></h1>
 			<div></div>
 		</skills>
 		</div>

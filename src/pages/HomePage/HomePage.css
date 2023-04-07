@@ -89,8 +89,13 @@
 		padding: .4rem;
 	}
 
+	.hard{
+		font-size: 3rem;
+	}
+
 	.codigoPng{
-		width: 30vw;
+		width: 40vw;
+		margin-top: auto;
 	}
 
 
@@ -175,6 +180,12 @@
 		height: 20vh;
 		overflow: scroll;
 		overflow-x: hidden;
+	}
+
+	.fontSize1{
+		font-size: 1rem;
+		margin-top: auto;
+		margin-bottom: auto;
 	}
 
 	.scroll1{
