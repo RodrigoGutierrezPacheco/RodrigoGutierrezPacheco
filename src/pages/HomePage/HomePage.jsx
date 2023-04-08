@@ -5,19 +5,19 @@ const HomePage = () => {
 	return (
 		<div className='body'>
 		<nav className='nav'>
-			<h1 className='blanco1 start'>&lt;Acerca de mi/&gt;</h1>
-			<h1 className='blanco1 start'>&lt;Proyectos/&gt;</h1>
-			<h1 className='blanco1 start'>&lt;Contacto/&gt;</h1>
+			<a href='' className='blanco1 start'>&lt;Acerca de mi/&gt;</a>
+			<a href='' className='blanco1 start'>&lt;Proyectos/&gt;</a>
+			<a href='' className='blanco1 start'>&lt;Contacto/&gt;</a>
 		</nav>
 		<header className='header'>
 			<div className='header1'>
 			<div>
 				<h1 className='header-text'>Hola, mi nombre es <h1 className='header-text-1 text-shadow'>Rodrigo.</h1></h1>
 				<div className='header-png'>
-					<img className='png-header' src="images/linkedin.png" alt="" />
-					<img className='png-header' src="images/github.png" alt="" />
-					<img className='png-header' src="images/gmail.png" alt="" />
-					<img className='png-header' src="images/whatsapp.png" alt="" />
+					<a href=""><img className='png-header' src="images/linkedin.png" alt=""/></a>
+					<a href=''><img className='png-header' src="images/github.png" alt=""/></a>
+					<a href=''><img className='png-header' src="images/gmail.png" alt=""/></a>
+					<a href=''><img className='png-header' src="images/whatsapp.png" alt=""/></a>
 				</div>
 				<button className='btn-header'>Contactame</button>
 			</div>
@@ -156,6 +156,11 @@ const HomePage = () => {
 		</div>
 		<h1 className='olivo1 start'>&lt;/Cont<span className='blanco1'>acto&gt;</span></h1>
 		</contacto>
+		<hr className='footer' />
+		<div className='flex1'>
+			<h1 className='blanco1'>2023©</h1>
+			<a className='href' href=""><h1 className='blanco1'>Volver Arriba</h1></a>
+		</div>
 		</div>
 	)
 }

@@ -131,10 +131,18 @@
 		font-weight: 700;
 	}
 
+	.footer{
+		border-bottom: 4px solid #556B2F;
+		width: 95vw;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
 	.blanco1{
 		color: rgba(255, 255, 255, .3);
 		font-weight: 700;
 		font-size: 1rem;
+		text-decoration: none;
 	}
 
 	.olivo{
@@ -284,7 +292,17 @@
 		flex-direction: row-reverse;
 	}
 
+	.flex1{
+		display: flex;
+		justify-content: space-between;
+		width: 95vw;
+		margin-right: auto;
+		margin-left: auto;
+	}
 
+ .href{
+	text-decoration: none;
+ }
 
 	.scroll1{
 		height: 50vh;
