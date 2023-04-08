@@ -5,9 +5,9 @@ const HomePage = () => {
 	return (
 		<div className='body'>
 		<nav className='nav'>
-			<h1 className='nav-text'>Acerca de mi</h1>
-			<h1 className='nav-text'>Contacto</h1>
-			<h1 className='nav-text'>Proyectos</h1>
+			<h1 className='blanco1 start'>&lt;Acerca de mi/&gt;</h1>
+			<h1 className='blanco1 start'>&lt;Proyectos/&gt;</h1>
+			<h1 className='blanco1 start'>&lt;Contacto/&gt;</h1>
 		</nav>
 		<header className='header'>
 			<div className='header1'>
