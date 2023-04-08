@@ -2,6 +2,50 @@ import React from 'react'
 import './HomePage.css'
 
 const HomePage = () => {
+  const proyectos = [
+		{
+			nombre: "Beautyy-MX",
+			descripcion: "Ecommerce para la venta de maquillaje, cuidado de la piel y accesesorios",
+			tipo: "Ecommerce",
+			logo:"beautyLogo",
+			github:"https://github.com/RodrigoGutierrezPacheco/BeautyyMx-Client",
+			href : "https://beautyymx-rodrigogutierrezpacheco.vercel.app/",
+			tecnologia1: "html",
+			tecnologia2: "css",
+			tecnologia3: "js",
+			tecnologia4: "react",
+			tecnologia5: "git",
+			tecnologia6: "bootstrap",
+			tecnologia7: "node",
+		},
+		{
+			nombre: "Agropecuaria - La Isla",
+			tipo: "Ecommerce",
+			descripcion: "Ecommerce para la venta de miel y productos naturales.",
+			logo:"abeja",
+			github:"https://github.com/RodrigoGutierrezPacheco/LaIsla",
+			href:"https://laisla.vercel.app/",
+			tecnologia1: "html",
+			tecnologia2: "css",
+			tecnologia3: "js",
+			tecnologia4: "react",
+			tecnologia5: "git",
+			tecnologia6: "bootstrap",
+			tecnologia7: "node",
+		},
+		{
+			nombre:"Vengeance Wars",
+			tipo: "Juego retro",
+			descripcion: "Juego tipo retro de naves espaciales para computadora y celular",
+			logo: "nave",
+			github:"https://github.com/RodrigoGutierrezPacheco/WarOfVengeance",
+			href:"https://rodrigogutierrezpacheco.github.io/WarOfVengeance/",
+			tecnologia1: "html",
+			tecnologia2: "css",
+			tecnologia3: "js"
+		}
+	]
+
 	return (
 		<div className='body'>
 		<nav className='nav'>
@@ -94,26 +138,31 @@ const HomePage = () => {
 		</skills>
 		<proyectos className="header">
 		<h1 className='olivo start hard'>&lt;Proye<span className='blanco'>ctos&gt;</span></h1>
-			<div className='container1'>
+		{proyectos.map((proyecto)=>{
+			return(
+				<div key={proyecto.nombre} className='container1'>
 				<div className='space'>
-					<img className='png1' src="images/beautyLogo.png" alt="" />
-					<img className='png1' src="images/github.png" alt="" />
+					<img className='png1' src={`images/${proyecto.logo}.png`} alt="" />
+					<a href={proyecto.github}><img className='png1' src="images/github.png" alt="" /></a>
 				</div>
-				<h1 className='blanco start line-height'>Beautyy-Mx Ecommerce</h1>
-				<h1 className='blanco1 start marginb'>Ecommerce para la venta de maquillaje, cuidado de la piel y accesorios.</h1>
+				<h1 className='blanco start line-height'>{proyecto.nombre}</h1>
+				<h1 className='blanco start line-height'>{proyecto.tipo}</h1>
+				<h1 className='blanco1 start marginb'>{proyecto.descripcion}</h1>
 			<div className='row'>
-				<img className='png' src="images/html.png" alt="" />
-				<img className='png' src="images/css.png" alt="" />
-				<img className='png' src="images/js.png" alt="" />
-				<img className='png' src="images/react.png" alt="" />
-				<img className='png' src="images/git.png" alt="" />
-				<img className='png' src="images/bootstrap.png" alt="" />
-				<img className='png' src="images/node.png" alt="" />
+				<img className='png' src={`images/${proyecto.tecnologia1}.png`} alt="" />
+				<img className='png' src={`images/${proyecto.tecnologia2}.png`} alt="" />
+				<img className='png' src={`images/${proyecto.tecnologia3}.png`} alt="" />
+				<img className='png' src={`images/${proyecto.tecnologia4}.png`} alt="" />
+				<img className='png' src={`images/${proyecto.tecnologia5}.png`} alt="" />
+				<img className='png' src={`images/${proyecto.tecnologia6}.png`} alt="" />
+				<img className='png' src={`images/${proyecto.tecnologia7}.png`} alt="" />
 				<img className='png' src="images/npm.png" alt="" />
 			</div>
-			<button className='btnVisitar'>Visitar</button>
+			<button hre className='btnVisitar'><a className='href blanco' href={proyecto.href}>Visitar</a></button>
 			</div>
-			<div className='container1'>
+			)
+		})}
+			{/* <div className='container1'>
 				<div className='space'>
 					<img className='png1' src="images/abeja.png" alt="" />
 					<img className='png1' src="images/github.png" alt="" />
@@ -131,7 +180,7 @@ const HomePage = () => {
 				<img className='png' src="images/npm.png" alt="" />
 			</div>
 			<button className='btnVisitar'>Visitar</button>
-			</div>
+			</div> */}
 			<h1 className='olivo1 start'>&lt;/Proye<span className='blanco1'>ctos&gt;</span></h1>
 		</proyectos>
 		<contacto className="header">
@@ -159,7 +208,7 @@ const HomePage = () => {
 		<hr className='footer' />
 		<div className='flex1'>
 			<h1 className='blanco1'>2023©</h1>
-			<a className='href' href=""><h1 className='blanco1'>Volver Arriba</h1></a>
+			<a className='' href=""><h1 className='blanco1'>Volver Arriba</h1></a>
 		</div>
 		</div>
 	)
