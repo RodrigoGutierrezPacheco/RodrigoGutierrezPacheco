@@ -134,6 +134,28 @@ const HomePage = () => {
 			</div>
 			<h1 className='olivo1 start'>&lt;/Proye<span className='blanco1'>ctos&gt;</span></h1>
 		</proyectos>
+		<contacto className="header">
+		<h1 className='olivo start hard'>&lt;Cont<span className='blanco'>acto&gt;</span></h1>
+		<div>
+			<div className='flex container2'>
+			 <h1 className='blanco start hard1'>&lt;LinkedIn/&gt;</h1>
+			 <img className='png2' src="images/linkedin.png" alt="" />
+			</div>
+			<div className='flex container2'>
+			 <h1 className='blanco start hard1'>&lt;Github/&gt;</h1>
+			 <img className='png2' src="images/github.png" alt="" />
+			</div>
+			<div className='flex container2'>
+			 <h1 className='blanco start hard1'>&lt;Gmail/&gt;</h1>
+			 <img className='png2' src="images/gmail.png" alt="" />
+			</div>
+			<div className='flex container2'>
+			 <h1 className='blanco start hard1'>&lt;Whatsapp/&gt;</h1>
+			 <img className='png2' src="images/whatsapp.png" alt="" />
+			</div>
+		</div>
+		<h1 className='olivo1 start'>&lt;/Cont<span className='blanco1'>acto&gt;</span></h1>
+		</contacto>
 		</div>
 	)
 }

@@ -11,7 +11,7 @@
 		display: flex;
 		flex-direction: row;
 		justify-content: space-around;
-		background-color:rgba(0, 0, 0, .4);
+		background-color:rgba(0, 0, 0, .2);
 		border-radius: 2rem;
 		margin-top: 1rem;
 		width: 95vw;
@@ -74,6 +74,13 @@
 		width: 5vw !important;
 	}
 
+	.png2{
+		width: 8vw;
+		margin-top: auto;
+		margin-bottom: auto;
+		margin-right: 1rem;
+	}
+
 
 	.png-header1{
 		width: 5vw;
@@ -107,6 +114,10 @@
 
 	.hard{
 		font-size: 3rem;
+	}
+
+	.hard1{
+		font-size: 2rem;
 	}
 
 	.codigoPng{
@@ -212,6 +223,18 @@
 		margin-top: 1rem;
 	}
 
+	.container2{
+		background-color: rgba(0, 0, 0, .2);
+		width: 90vw ;
+		margin-right: auto;
+		margin-left: auto;
+		padding: 1rem;
+		border-radius: 1rem;
+		margin-top: 1rem;
+		display: flex;
+		justify-content: flex-end;
+	}
+
 	.wrap{
 		display: flex;
 		flex-wrap: wrap;
@@ -255,6 +278,13 @@
 		margin-top: auto;
 		margin-bottom: auto;
 	}
+
+	.flex{
+		display: flex;
+		flex-direction: row-reverse;
+	}
+
+
 
 	.scroll1{
 		height: 50vh;
