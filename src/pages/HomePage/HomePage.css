@@ -20,6 +20,8 @@
 		padding: .2rem;
 	}
 
+
+
 	.nav-text{
 		font-size: 1.1rem;
 	}
@@ -92,6 +94,12 @@
 		text-shadow: 2px 2px 4px rgba(85, 107, 47, .4);
 	}
 
+	.flex2{
+		display: flex;
+		flex-direction: row;
+		margin-top: 1.5rem;
+	}
+
 	.header-png{
 		display: flex;
 		flex-direction: row;
@@ -112,12 +120,32 @@
 		padding: .4rem;
 	}
 
+	.input{
+		background-color: rgba(52, 52, 52, .8);
+		color: white;
+		border-radius: .4rem;
+		width: 45vw;
+	}
+
+	.text{
+		width: 30vw;
+		text-align: start;
+	}
+
+	.cotizaciones{
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+	}
+
 	.hard{
 		font-size: 3rem;
 	}
 
 	.hard1{
 		font-size: 2rem;
+		color: rgba(255, 255, 255, .3) !important;
 	}
 
 	.codigoPng{
@@ -176,6 +204,12 @@
 		border-radius: .4rem;
 		font-size: 1rem;
 		padding: .3rem;
+	}
+
+	.margint{
+		margin-top: 2rem;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 	.header{

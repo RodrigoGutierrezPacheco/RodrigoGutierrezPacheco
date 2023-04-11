@@ -1,7 +1,41 @@
 import React from 'react'
 import './HomePage.css'
+import { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+import Swal from 'sweetalert2';
 
 const HomePage = () => {
+
+  //email js
+	const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm(process.env.REACT_APP_EMAILJS_SERVICEID, process.env.REACT_APP_EMAILJS_TEMPLATEID, form.current, process.env.REACT_APP_EMAILJS_PUBLICKEY)
+      .then((result) => {
+          console.log(result.text);
+					Swal.fire({
+						title: 'Gracias!',
+						text: 'En breve nos comunicaremos contigo!',
+						icon: 'success',
+						confirmButtonColor: 'black', // Cambia el color del botón
+						color:"black",
+						background: 'rgba(255, 255, 255, 1)', // Cambia el color de fondo de la alerta
+						customClass: {
+							title: 'my-title-class', // Cambia el estilo del título
+							confirmButton: 'my-button-class', // Cambia el estilo del botón,
+						},
+						willClose: () => {
+							window.location.reload();
+						}
+					});
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
+
+
   const proyectos = [
 		{
 			nombre: "Beautyy-MX",
@@ -162,25 +196,6 @@ const HomePage = () => {
 			</div>
 			)
 		})}
-			{/* <div className='container1'>
-				<div className='space'>
-					<img className='png1' src="images/abeja.png" alt="" />
-					<img className='png1' src="images/github.png" alt="" />
-				</div>
-				<h1 className='blanco start line-height'>Agropecuaria-La Isla Ecommerce</h1>
-				<h1 className='blanco1 start marginb'>Ecommerce para la venta de miel y productos naturales.</h1>
-			<div className='row'>
-				<img className='png' src="images/html.png" alt="" />
-				<img className='png' src="images/css.png" alt="" />
-				<img className='png' src="images/js.png" alt="" />
-				<img className='png' src="images/react.png" alt="" />
-				<img className='png' src="images/git.png" alt="" />
-				<img className='png' src="images/bootstrap.png" alt="" />
-				<img className='png' src="images/node.png" alt="" />
-				<img className='png' src="images/npm.png" alt="" />
-			</div>
-			<button className='btnVisitar'>Visitar</button>
-			</div> */}
 			<h1 className='olivo1 start'>&lt;/Proye<span className='blanco1'>ctos&gt;</span></h1>
 		</proyectos>
 		<contacto className="header">
@@ -205,10 +220,40 @@ const HomePage = () => {
 		</div>
 		<h1 className='olivo1 start'>&lt;/Cont<span className='blanco1'>acto&gt;</span></h1>
 		</contacto>
+		<cotizacion className="header">
+		<h1 className='olivo start hard'>&lt;Coti<span className='blanco'>zaciones&gt;</span></h1>
+		<div className='container1'>
+		<form className='cotizaciones' ref={form} onSubmit={sendEmail}>
+			<div className='flex2'>
+       <label className='blanco text'>Nombre:</label>
+       <input required placeholder='Ingresa tu Nombre completo' className='input' type="text" name="user_name" />
+			</div>
+			<div className='flex2'>
+       <label className='blanco text'>Correo Electronico:</label>
+       <input required placeholder='correo@correo.com' className='input' type="email" name="user_email" />
+			</div>
+			<div className='flex2'>
+       <label className='blanco text'>Mensaje:</label>
+       <textarea required placeholder='¿Tienes algun proyecto en mente? !Escribenos¡' className='input' name="message" />
+			</div>
+			<div className='flex2'>
+       <label className='blanco text'>Presupuesto:</label>
+       <select required className='input' name="presupuesto" id="">
+				<option value=""></option>
+			 <option value="1k-5k">1k-5k</option>
+			 <option value="5k-10k">5k-10k</option>
+			 <option value="mas de 10k">Mas de 10k</option>
+			 </select>
+			</div>
+      <input className='btn-header margint' type="submit" value="Enviar" />
+    </form>
+		</div>
+		<h1 className='olivo1 start'>&lt;/Coti<span className='blanco1'>zaciones&gt;</span></h1>
+		</cotizacion>
 		<hr className='footer' />
 		<div className='flex1'>
 			<h1 className='blanco1'>2023©</h1>
-			<a className='' href=""><h1 className='blanco1'>Volver Arriba</h1></a>
+			<a className='href' href=""><h1 className='blanco1'>Volver Arriba</h1></a>
 		</div>
 		</div>
 	)
