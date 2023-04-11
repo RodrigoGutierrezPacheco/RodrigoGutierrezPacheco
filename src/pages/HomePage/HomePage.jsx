@@ -155,7 +155,8 @@ const HomePage = () => {
 				</div>
 			</div>
 			<h1 className='olivo1 start'>&lt;/Hard<span className='blanco1'>Skills&gt;</span></h1>
-			<div>
+		</skills>
+			<div className='header'>
 			<h1 className='olivo start hard'>&lt;Soft<span className='blanco'>Skills&gt;</span></h1>
 			<div className='wrap1'>
 				<h1 className='soft'>&lt;Comunicacion/&gt;</h1>
@@ -169,7 +170,6 @@ const HomePage = () => {
 			</div>
 			<h1 className='olivo1 start'>&lt;/Soft<span className='blanco1'>Skills&gt;</span></h1>
 			</div>
-		</skills>
 		<proyectos className="header">
 		<h1 className='olivo start hard'>&lt;Proye<span className='blanco'>ctos&gt;</span></h1>
 		{proyectos.map((proyecto)=>{
