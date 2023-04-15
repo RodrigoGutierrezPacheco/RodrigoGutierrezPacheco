@@ -68,6 +68,21 @@ const HomePage = () => {
 			tecnologia7: "node",
 		},
 		{
+			nombre: "Blxck-Training",
+			tipo: "App",
+			descripcion: "App web de rutinas para gimnacio y casa",
+			logo:"pesoa",
+			github:"https://github.com/RodrigoGutierrezPacheco/BlxckTraining",
+			href:"https://blxck-training.vercel.app/",
+			tecnologia1: "html",
+			tecnologia2: "css",
+			tecnologia3: "js",
+			tecnologia4: "react",
+			tecnologia5: "git",
+			tecnologia6: "bootstrap",
+			tecnologia7: "node",
+		},
+		{
 			nombre:"Vengeance Wars",
 			tipo: "Juego retro",
 			descripcion: "Juego tipo retro de naves espaciales para computadora y celular",
@@ -104,12 +119,16 @@ const HomePage = () => {
 			</div>
 			</div>
 			<div className='header2'>
-				<div className='width'>
+				<div className='width1'>
 					<h1 className='header-text-2 text-shadow'>Acerca de mi :</h1>
 					<button className='btn-header1'>CV <img className='png-header1' src="images/documento.png" alt="" /></button>
 				</div>
 				<div className='scroll'>
-					<section className='header-text'>Soy un desarrollador fronten Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat, et! Dolores quod fuga fugit voluptatum, saepe impedit, nam magni corrupti est nihil deserunt nulla, rem exercitationem earum! Atque, explicabo voluptatem!</section>
+					<section className='header-text'>¡Hola! Mi nombre es <a className='olivo href'>Rodrigo Gutierrez Pacheco</a> y soy un apasionado desarrollador web front-end junior. Mi habilidad principal es el desarrollo con HTML, CSS, JavaScript y React.js, además de tener conocimientos en diversas librerías para estilos de CSS.
+
+          Soy una persona proactiva, creativa y altamente motivada. Me encanta trabajar en equipo y aprender cosas nuevas, siempre estoy buscando maneras de mejorar y crecer profesionalmente. Mi mayor satisfacción es ver los proyectos en los que trabajo cobrar vida y lograr los objetivos que se han propuesto.
+
+          Me considero un desarrollador detallista y apasionado por las nuevas tecnologías, lo que me permite estar al día en las últimas tendencias y novedades en el mundo del desarrollo web. Además, tengo una gran capacidad de adaptación y resolución de problemas, lo que me permite enfrentar nuevos desafíos con entusiasmo y confianza.</section>
 				</div>
 			</div>
 		</header>
@@ -167,11 +186,15 @@ const HomePage = () => {
 				<h1 className='soft'>&lt;Resolucion de problemas/&gt;</h1>
 				<h1 className='soft'>&lt;Autodisciplina/&gt;</h1>
 				<h1 className='soft'>&lt;Autodidacta/&gt;</h1>
+				<h1 className='soft'>&lt;Pensamiento Logico/&gt;</h1>
+				<h1 className='soft'>&lt;Comprension/&gt;</h1>
+				<h1 className='soft'>&lt;Pensamiento Critico/&gt;</h1>
 			</div>
 			<h1 className='olivo1 start'>&lt;/Soft<span className='blanco1'>Skills&gt;</span></h1>
 			</div>
 		<proyectos className="header">
 		<h1 className='olivo start hard'>&lt;Proye<span className='blanco'>ctos&gt;</span></h1>
+			<div className='wrap'>
 		{proyectos.map((proyecto)=>{
 			return(
 				<div key={proyecto.nombre} className='container1'>
@@ -196,11 +219,12 @@ const HomePage = () => {
 			</div>
 			)
 		})}
+		</div>
 			<h1 className='olivo1 start'>&lt;/Proye<span className='blanco1'>ctos&gt;</span></h1>
 		</proyectos>
 		<contacto className="header">
 		<h1 className='olivo start hard'>&lt;Cont<span className='blanco'>acto&gt;</span></h1>
-		<div>
+		<div className='wrap'>
 			<div className='flex container2'>
 			 <h1 className='blanco start hard1'>&lt;LinkedIn/&gt;</h1>
 			 <img className='png2' src="images/linkedin.png" alt="" />
@@ -222,7 +246,7 @@ const HomePage = () => {
 		</contacto>
 		<cotizacion className="header">
 		<h1 className='olivo start hard'>&lt;Coti<span className='blanco'>zaciones&gt;</span></h1>
-		<div className='container1'>
+		<div className='container3'>
 		<form className='cotizaciones' ref={form} onSubmit={sendEmail}>
 			<div className='flex2'>
        <label className='blanco text'>Nombre:</label>
