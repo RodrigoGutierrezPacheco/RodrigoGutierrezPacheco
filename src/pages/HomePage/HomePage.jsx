@@ -107,10 +107,10 @@ const HomePage = () => {
 			<div>
 				<h1 className='header-text'>Hola, mi nombre es <h1 className='header-text-1 text-shadow'>Rodrigo.</h1></h1>
 				<div className='header-png'>
-					<a href=""><img className='png-header' src="images/linkedin.png" alt=""/></a>
-					<a href=''><img className='png-header' src="images/github.png" alt=""/></a>
-					<a href=''><img className='png-header' src="images/gmail.png" alt=""/></a>
-					<a href=''><img className='png-header' src="images/whatsapp.png" alt=""/></a>
+					<a href="https://www.linkedin.com/in/rodrigogutierrezpacheco/"><img className='png-header' src="images/linkedin.png" alt=""/></a>
+					<a href='https://github.com/RodrigoGutierrezPacheco'><img className='png-header' src="images/github.png" alt=""/></a>
+					<a href='mailto:rodrigogutierrezpacheco@gmail.com?subject=Cotizaciones&body=¡Hola!%20me%20gustaria%20una%20cotizacion%20para%20una%20pagina%20web'><img className='png-header' src="images/gmail.png" alt=""/></a>
+					<a href='https://api.whatsapp.com/send?phone=525638686467'><img className='png-header' src="images/whatsapp.png" alt=""/></a>
 				</div>
 				<button className='btn-header'>Contactame</button>
 			</div>
@@ -226,20 +226,20 @@ const HomePage = () => {
 		<h1 className='olivo start hard'>&lt;Cont<span className='blanco'>acto&gt;</span></h1>
 		<div className='wrap'>
 			<div className='flex container2'>
-			 <h1 className='blanco start hard1'>&lt;LinkedIn/&gt;</h1>
-			 <img className='png2' src="images/linkedin.png" alt="" />
+			 <a href='https://www.linkedin.com/in/rodrigogutierrezpacheco/' className='blanco start hard1 href'>&lt;LinkedIn/&gt;</a>
+			 <a href="https://www.linkedin.com/in/rodrigogutierrezpacheco/"><img className='png2' src="images/linkedin.png" alt="" /></a>
 			</div>
 			<div className='flex container2'>
-			 <h1 className='blanco start hard1'>&lt;Github/&gt;</h1>
-			 <img className='png2' src="images/github.png" alt="" />
+			 <a href='https://github.com/RodrigoGutierrezPacheco' className='blanco start hard1 href'>&lt;Github/&gt;</a>
+			 <a href="https://github.com/RodrigoGutierrezPacheco"><img className='png2' src="images/github.png" alt="" /></a>
 			</div>
 			<div className='flex container2'>
-			 <h1 className='blanco start hard1'>&lt;Gmail/&gt;</h1>
-			 <img className='png2' src="images/gmail.png" alt="" />
+			 <a href="mailto:rodrigogutierrezpacheco@gmail.com?subject=Cotizaciones&body=¡Hola!%20me%20gustaria%20una%20cotizacion%20para%20una%20pagina%20web" className='href'><h1 className='blanco start hard1'>&lt;Gmail/&gt;</h1></a>
+			 <a href="mailto:rodrigogutierrezpacheco@gmail.com?subject=Cotizaciones&body=¡Hola!%20me%20gustaria%20una%20cotizacion%20para%20una%20pagina%20web"><img className='png2' src="images/gmail.png" alt="" /></a>
 			</div>
 			<div className='flex container2'>
-			 <h1 className='blanco start hard1'>&lt;Whatsapp/&gt;</h1>
-			 <img className='png2' src="images/whatsapp.png" alt="" />
+			 <a href='https://api.whatsapp.com/send?phone=525638686467' className='blanco start hard1 href'>&lt;Whatsapp/&gt;</a>
+			 <a href="https://api.whatsapp.com/send?phone=525638686467"><img className='png2' src="images/whatsapp.png" alt="" /></a>
 			</div>
 		</div>
 		<h1 className='olivo1 start'>&lt;/Cont<span className='blanco1'>acto&gt;</span></h1>
