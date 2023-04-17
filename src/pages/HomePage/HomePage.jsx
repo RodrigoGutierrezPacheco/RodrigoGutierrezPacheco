@@ -96,11 +96,11 @@ const HomePage = () => {
 	]
 
 	return (
-		<div className='body'>
+		<div className='body' id='inicio'>
 		<nav className='nav'>
-			<a href='' className='blanco1 start'>&lt;Acerca de mi/&gt;</a>
-			<a href='' className='blanco1 start'>&lt;Proyectos/&gt;</a>
-			<a href='' className='blanco1 start'>&lt;Contacto/&gt;</a>
+			<a href='#proyectos' className='blanco1 start'>&lt;Proyectos/&gt;</a>
+			<a href='#contacto' className='blanco1 start'>&lt;Contacto/&gt;</a>
+			<a href='#cotizaciones' className='blanco1 start'>&lt;Cotizaciones/&gt;</a>
 		</nav>
 		<header className='header'>
 			<div className='header1'>
@@ -121,7 +121,7 @@ const HomePage = () => {
 			<div className='header2'>
 				<div className='width1'>
 					<h1 className='header-text-2 text-shadow'>Acerca de mi :</h1>
-					<button className='btn-header1'>CV <img className='png-header1' src="images/documento.png" alt="" /></button>
+					<a href="images/cv.pdf" download className='href'><button className='btn-header1'>CV <img className='png-header1' src="images/documento.png" alt="" /></button></a>
 				</div>
 				<div className='scroll'>
 					<section className='header-text'>¡Hola! Mi nombre es <a className='olivo href'>Rodrigo Gutierrez Pacheco</a> y soy un apasionado desarrollador web front-end junior. Mi habilidad principal es el desarrollo con HTML, CSS, JavaScript y React.js, además de tener conocimientos en diversas librerías para estilos de CSS.
@@ -192,7 +192,7 @@ const HomePage = () => {
 			</div>
 			<h1 className='olivo1 start'>&lt;/Soft<span className='blanco1'>Skills&gt;</span></h1>
 			</div>
-		<proyectos className="header">
+		<proyectos className="header" id="proyectos">
 		<h1 className='olivo start hard'>&lt;Proye<span className='blanco'>ctos&gt;</span></h1>
 			<div className='wrap'>
 		{proyectos.map((proyecto)=>{
@@ -222,7 +222,7 @@ const HomePage = () => {
 		</div>
 			<h1 className='olivo1 start'>&lt;/Proye<span className='blanco1'>ctos&gt;</span></h1>
 		</proyectos>
-		<contacto className="header">
+		<contacto id='contacto' className="header">
 		<h1 className='olivo start hard'>&lt;Cont<span className='blanco'>acto&gt;</span></h1>
 		<div className='wrap'>
 			<div className='flex container2'>
@@ -244,7 +244,7 @@ const HomePage = () => {
 		</div>
 		<h1 className='olivo1 start'>&lt;/Cont<span className='blanco1'>acto&gt;</span></h1>
 		</contacto>
-		<cotizacion className="header">
+		<cotizacion id="cotizaciones" className="header">
 		<h1 className='olivo start hard'>&lt;Coti<span className='blanco'>zaciones&gt;</span></h1>
 		<div className='container3'>
 		<form className='cotizaciones' ref={form} onSubmit={sendEmail}>
@@ -277,7 +277,7 @@ const HomePage = () => {
 		<hr className='footer' />
 		<div className='flex1'>
 			<h1 className='blanco1'>2023©</h1>
-			<a className='href' href=""><h1 className='blanco1'>Volver Arriba</h1></a>
+			<a className='href' href="#inicio"><h1 className='blanco1'>Volver Arriba</h1></a>
 		</div>
 		</div>
 	)

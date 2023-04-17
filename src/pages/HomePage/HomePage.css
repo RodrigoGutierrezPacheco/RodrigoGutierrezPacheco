@@ -67,9 +67,7 @@
 	
 		.png-header{
 			width: 7vw;
-			border: 3px solid white;
 			border-radius: .4rem;
-			padding: .2rem;
 		}
 	
 		.png{
@@ -534,7 +532,7 @@
 		.blanco1{
 			color: rgba(255, 255, 255, .3);
 			font-weight: 700;
-			font-size: 1rem;
+			font-size: 1.5rem;
 			text-decoration: none;
 		}
 	
