@@ -191,6 +191,13 @@
 			font-size: 1rem;
 			text-decoration: none;
 		}
+
+		.blanco2{
+			color: rgba(255, 255, 255, .3);
+			font-weight: 700;
+			font-size: 1rem;
+			text-decoration: none;
+		}
 	
 		.olivo{
 			color: #556B2F;
@@ -553,6 +560,13 @@
 		}
 	
 		.blanco1{
+			color: rgba(255, 255, 255, .3);
+			font-weight: 700;
+			font-size: 1rem;
+			text-decoration: none;
+		}
+
+		.blanco2{
 			color: rgba(255, 255, 255, .3);
 			font-weight: 700;
 			font-size: 1.5rem;

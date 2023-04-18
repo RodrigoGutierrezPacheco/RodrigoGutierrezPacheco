@@ -99,9 +99,9 @@ const HomePage = () => {
 	return (
 		<div className='body' id='inicio'>
 		<nav className='nav'>
-			<a href='#proyectos' className='blanco1 start'>&lt;Proyectos/&gt;</a>
-			<a href='#contacto' className='blanco1 start'>&lt;Contacto/&gt;</a>
-			<a href='#cotizaciones' className='blanco1 start'>&lt;Cotizaciones/&gt;</a>
+			<a href='#proyectos' className='blanco2 start href'>&lt;Proyectos/&gt;</a>
+			<a href='#contacto' className='blanco2 start href'>&lt;Contacto/&gt;</a>
+			<a href='#cotizaciones' className='blanco2 start href'>&lt;Cotizaciones/&gt;</a>
 		</nav>
 		<header className='header'>
 			<div className='header1'>
