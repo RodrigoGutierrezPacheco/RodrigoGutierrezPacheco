@@ -346,6 +346,12 @@
 			overflow: scroll;
 			overflow-x: hidden;
 		}
+		
+		.scroll2{
+			height: 60vh;
+			overflow: scroll;
+			overflow-x: hidden;
+		}
 	
 		.guiño{
 			width: 45vw;
@@ -718,6 +724,7 @@
 			overflow: scroll;
 			overflow-x: hidden;
 		}
+		
 	
 		.guiño{
 			width: 20vw;

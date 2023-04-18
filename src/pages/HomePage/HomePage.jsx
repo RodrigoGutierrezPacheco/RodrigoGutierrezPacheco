@@ -3,6 +3,7 @@ import './HomePage.css'
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2';
+import { register } from 'swiper/element/bundle';
 
 const HomePage = () => {
 
@@ -112,7 +113,7 @@ const HomePage = () => {
 					<a href='mailto:rodrigogutierrezpacheco@gmail.com?subject=Cotizaciones&body=¡Hola!%20me%20gustaria%20una%20cotizacion%20para%20una%20pagina%20web'><img className='png-header' src="images/gmail.png" alt=""/></a>
 					<a href='https://api.whatsapp.com/send?phone=525638686467'><img className='png-header' src="images/whatsapp.png" alt=""/></a>
 				</div>
-				<button className='btn-header'>Contactame</button>
+				<button className='btn-header'><a href="https://api.whatsapp.com/send?phone=525638686467" className='href blanco'>Contactame</a></button>
 			</div>
 			<div>
 				<img className='guiño' src="images/guiño.gif" alt="" />
@@ -194,7 +195,7 @@ const HomePage = () => {
 			</div>
 		<proyectos className="header" id="proyectos">
 		<h1 className='olivo start hard'>&lt;Proye<span className='blanco'>ctos&gt;</span></h1>
-			<div className='wrap'>
+			<div className='wrap scroll2'>
 		{proyectos.map((proyecto)=>{
 			return(
 				<div key={proyecto.nombre} className='container1'>
