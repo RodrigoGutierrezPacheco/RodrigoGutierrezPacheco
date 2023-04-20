@@ -1,7 +1,7 @@
 import React from 'react'
 import './HomePage.css'
 import { useRef } from 'react';
-import emailjs from '@emailjs/browser';
+import emailjs from 'emailjs-com'
 import Swal from 'sweetalert2';
 import { register } from 'swiper/element/bundle';
 
@@ -13,7 +13,7 @@ const HomePage = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm(process.env.REACT_APP_EMAILJS_SERVICEID, process.env.REACT_APP_EMAILJS_TEMPLATEID,process.env.REACT_APP_EMAILJS_PUBLICKEY, form.current)
+    emailjs.sendForm(process.env.REACT_APP_EMAILJS_SERVICEID, process.env.REACT_APP_EMAILJS_TEMPLATEID,form.current,process.env.REACT_APP_EMAILJS_PUBLICKEY)
       .then((result) => {
           console.log(result.text);
 					Swal.fire({
