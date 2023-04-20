@@ -12,6 +12,7 @@ const HomePage = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
+		emailjs.init('Q-9E7qPt5U-kBqC9P')
 
     emailjs.sendForm('service_a3iwfaq', process.env.REACT_APP_EMAILJS_TEMPLATEID, form.current,'Q-9E7qPt5U-kBqC9P')
       .then((result) => {
