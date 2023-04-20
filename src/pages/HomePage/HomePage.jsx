@@ -12,7 +12,6 @@ const HomePage = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-		emailjs.init(process.env.REACT_APP_EMAILJS_PUBLICKEY)
 
     emailjs.sendForm(process.env.REACT_APP_EMAILJS_SERVICEID, process.env.REACT_APP_EMAILJS_TEMPLATEID, form.current,process.env.REACT_APP_EMAILJS_PUBLICKEY)
       .then((result) => {
