@@ -14,7 +14,7 @@ const HomePage = () => {
     e.preventDefault();
 		emailjs.init('Q-9E7qPt5U-kBqC9P')
 
-    emailjs.sendForm('service_a3iwfaq', 'template_nq34ag7', form.current,'Q-9E7qPt5U-kBqC9P')
+    emailjs.sendForm('service_a3iwfaq', 'template_nq34ag7', form.current,process.env.REACT_APP_EMAILJS_PUBLICKEY)
       .then((result) => {
           console.log(result.text);
 					Swal.fire({
