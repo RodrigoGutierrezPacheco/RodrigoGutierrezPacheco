@@ -13,7 +13,7 @@ const HomePage = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_a3iwfaq','template_nq34ag7',form.current,'Q-9E7qPt5U-kBqC9P')
+    emailjs.sendForm(process.env.REACT_APP_EMAILJS_SERVICEID, process.env.REACT_APP_EMAILJS_TEMPLATEID,form.current,process.env.REACT_APP_EMAILJS_USERID)
       .then((result) => {
           console.log(result.text);
 					Swal.fire({
