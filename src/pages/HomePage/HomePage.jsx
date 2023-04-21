@@ -4,6 +4,7 @@ import { useRef } from 'react';
 import emailjs from 'emailjs-com'
 import Swal from 'sweetalert2';
 import { register } from 'swiper/element/bundle';
+import Carousel from 'react-bootstrap/Carousel';
 
 const HomePage = () => {
 
@@ -96,6 +97,38 @@ const HomePage = () => {
 		}
 	]
 
+	const certificaciones =[
+		{
+			nombre: "Web Development Full time Bootcamp in Mexico City",
+			escuela:"Ironhack",
+			id:"61169226",
+			img:"images/ironHackLogo.png",
+			credencial:"https://www.credential.net/5d083bae-5297-4abb-88af-553fbbcc5e70"
+		},
+		{
+			nombre: "Aspectos básicos del diseño de la experiencia del usuario",
+			escuela:"Coursera",
+			id:"TXTE9MRV5YHH",
+			img:"images/coursera.png",
+			credencial:"https://www.coursera.org/account/accomplishments/certificate/TXTE9MRV5YHH"
+		},
+		{
+			nombre: "Build Responsive Real-World  Websites with HTML and CSS",
+			escuela:"Udemy",
+			id:"UC-9487e580-411f-4c07-9ec7-26428c76f8b1",
+			img:"images/udemy.png",
+			credencial:"ude.my/UC-9487e580-411f-4c07-9ec7-26428c76f8b1"
+		},
+		{
+			nombre: "Programación FullStack",
+			escuela:"Udemy",
+			id:"UC-63a18f26-ba33-4ecd-8dd9-3426fb55f6d8",
+			img:"images/udemy.png",
+			credencial:"https://www.udemy.com/certificate/UC-63a18f26-ba33-4ecd-8dd9-3426fb55f6d8/"
+		},
+
+	]
+
 	return (
 		<div className='body' id='inicio'>
 		<nav className='nav'>
@@ -176,6 +209,25 @@ const HomePage = () => {
 			</div>
 			<h1 className='olivo1 start'>&lt;/Hard<span className='blanco1'>Skills&gt;</span></h1>
 		</skills>
+		<div className='header'>
+		<h1 className='olivo start hard'>&lt;Certificaciones-<br /><span className='blanco'>Cursos&gt;</span></h1>
+		<div className='wrap scroll2'>
+		{certificaciones.map((certificacion)=>{
+			return(
+				<div key={certificacion.nombre} className='container1'>
+				<div className='space'>
+					<img className='img-curso' src={certificacion.img} alt="" />
+				</div>
+				<h1 className='blanco start'>{certificacion.escuela}</h1>
+				<h1 className='blanco1 start marginb'>{certificacion.nombre}</h1>
+			<button hre className='btnVisitar'><a className='href blanco' href={certificacion.credencial}>Visitar</a></button>
+			</div>
+			)
+		})}
+		</div>
+		<h1 className='olivo1 start'>&lt;/Certificaciones-<span className='blanco1'>Cursos&gt;</span></h1>
+
+		</div>
 			<div className='header'>
 			<h1 className='olivo start hard'>&lt;Soft<span className='blanco'>Skills&gt;</span></h1>
 			<div className='wrap1'>

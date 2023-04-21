@@ -37,9 +37,11 @@
 			margin-left: auto;
 			padding: .2rem;
 		}
-	
-	
-	
+ 
+		.img-curso{
+			width: 10vw;
+		}
+
 		.nav-text{
 			font-size: 1.1rem;
 		}
@@ -117,6 +119,11 @@
 			display: flex;
 			flex-direction: row;
 			margin-top: 1.5rem;
+		}
+
+		.flex3{
+			display: flex;
+			flex-direction: column;
 		}
 	
 		.header-png{
@@ -373,6 +380,12 @@
 		
 		.scroll2{
 			height: 60vh;
+			overflow: scroll;
+			overflow-x: hidden;
+		}
+
+		.scroll3{
+			height: 100vh;
 			overflow: scroll;
 			overflow-x: hidden;
 		}
