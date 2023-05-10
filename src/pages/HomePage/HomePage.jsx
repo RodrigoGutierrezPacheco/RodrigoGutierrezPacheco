@@ -133,7 +133,7 @@ const HomePage = () => {
 		<div className='body' id='inicio'>
 		<nav className='nav'>
 			<a href='#proyectos' className='blanco2 start href'>&lt;Proyectos/&gt;</a>
-			<a href='#contacto' className='blanco2 start href'>&lt;Contacto/&gt;</a>
+			<a href='#contacto' className='blanco2 start href'>&lt;Redes/&gt;</a>
 			<a href='#cotizaciones' className='blanco2 start href'>&lt;Cotizaciones/&gt;</a>
 		</nav>
 		<header className='header'>
@@ -209,7 +209,9 @@ const HomePage = () => {
 			</div>
 			<h1 className='olivo1 start'>&lt;/Hard<span className='blanco1'>Skills&gt;</span></h1>
 		</skills>
-		<div className='header'>
+
+		{/* Certificaciones */}
+		{/* <div className='header'>
 		<h1 className='olivo start hard'>&lt;Certificaciones-<br /><span className='blanco'>Cursos&gt;</span></h1>
 		<div className='wrap scroll2'>
 		{certificaciones.map((certificacion)=>{
@@ -226,8 +228,9 @@ const HomePage = () => {
 		})}
 		</div>
 		<h1 className='olivo1 start'>&lt;/Certificaciones-<span className='blanco1'>Cursos&gt;</span></h1>
+		</div> */}
 
-		</div>
+  {/* Softskills */}
 			<div className='header'>
 			<h1 className='olivo start hard'>&lt;Soft<span className='blanco'>Skills&gt;</span></h1>
 			<div className='wrap1'>
@@ -245,6 +248,8 @@ const HomePage = () => {
 			</div>
 			<h1 className='olivo1 start'>&lt;/Soft<span className='blanco1'>Skills&gt;</span></h1>
 			</div>
+
+			{/* Proyectos */}
 		<proyectos className="header" id="proyectos">
 		<h1 className='olivo start hard'>&lt;Proye<span className='blanco'>ctos&gt;</span></h1>
 			<div className='wrap scroll2'>
@@ -275,8 +280,10 @@ const HomePage = () => {
 		</div>
 			<h1 className='olivo1 start'>&lt;/Proye<span className='blanco1'>ctos&gt;</span></h1>
 		</proyectos>
+
+		{/* Contacto */}
 		<contacto id='contacto' className="header">
-		<h1 className='olivo start hard'>&lt;Cont<span className='blanco'>acto&gt;</span></h1>
+		<h1 className='olivo start hard'>&lt;Re<span className='blanco'>des&gt;</span></h1>
 		<div className='wrap'>
 			<div className='flex container2'>
 			 <a href='https://www.linkedin.com/in/rodrigogutierrezpacheco/' className='blanco start hard1 href'>&lt;LinkedIn/&gt;</a>
@@ -295,10 +302,12 @@ const HomePage = () => {
 			 <a href="https://api.whatsapp.com/send?phone=525638686467"><img className='png2' src="images/whatsapp.png" alt="" /></a>
 			</div>
 		</div>
-		<h1 className='olivo1 start'>&lt;/Cont<span className='blanco1'>acto&gt;</span></h1>
+		<h1 className='olivo1 start'>&lt;/Re<span className='blanco1'>des&gt;</span></h1>
 		</contacto>
+
+   {/* Cotizaciones */}
 		<cotizacion id="cotizaciones" className="header">
-		<h1 className='olivo start hard'>&lt;Coti<span className='blanco'>zaciones&gt;</span></h1>
+		<h1 className='olivo start hard'>&lt;Cont<span className='blanco'>acto&gt;</span></h1>
 		<div className='container3'>
 		<form className='cotizaciones' ref={form} onSubmit={sendEmail}>
 			<div className='flex2'>
@@ -325,8 +334,10 @@ const HomePage = () => {
       <input className='btn-header margint' type="submit" value="Enviar" />
     </form>
 		</div>
-		<h1 className='olivo1 start'>&lt;/Coti<span className='blanco1'>zaciones&gt;</span></h1>
+		<h1 className='olivo1 start'>&lt;/Cont<span className='blanco1'>acto&gt;</span></h1>
 		</cotizacion>
+
+
 		<hr className='footer' />
 		<div className='flex1'>
 			<h1 className='blanco1'>2023©</h1>
