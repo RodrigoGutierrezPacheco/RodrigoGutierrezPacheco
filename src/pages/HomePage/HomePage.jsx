@@ -41,7 +41,7 @@ const HomePage = () => {
   const proyectos = [
 		{
 			nombre: "Beautyy-MX",
-			descripcion: "Ecommerce para la venta de maquillaje, cuidado de la piel y accesesorios",
+			descripcion: "Ecommerce para la venta de maquillaje, cuidado de la piel y accesorios",
 			tipo: "Ecommerce",
 			logo:"beautyLogo",
 			github:"https://github.com/RodrigoGutierrezPacheco/BeautyyMx-Client",
@@ -72,7 +72,7 @@ const HomePage = () => {
 		{
 			nombre: "Blxck-Training",
 			tipo: "App",
-			descripcion: "App web de rutinas para gimnacio y casa",
+			descripcion: "App web de rutinas para gimnasio y casa",
 			logo:"pesoa",
 			github:"https://github.com/RodrigoGutierrezPacheco/BlxckTraining",
 			href:"https://blxck-training.vercel.app/",
@@ -99,7 +99,7 @@ const HomePage = () => {
 
 	const certificaciones =[
 		{
-			nombre: "Web Development Full time Bootcamp in Mexico City",
+			nombre: "Web Development Full time Bootcamp in México City",
 			escuela:"Ironhack",
 			id:"61169226",
 			img:"images/ironHackLogo.png",
@@ -158,7 +158,7 @@ const HomePage = () => {
 					<a href="images/cv.pdf" download className='href'><button className='btn-header1'>CV <img className='png-header1' src="images/documento.png" alt="" /></button></a>
 				</div>
 				<div className='scroll'>
-					<section className='header-text'>¡Hola! Mi nombre es <a className='olivo href'>Rodrigo Gutierrez Pacheco</a> y soy un apasionado desarrollador web front-end junior. Mi habilidad principal es el desarrollo con HTML, CSS, JavaScript y React.js, además de tener conocimientos en diversas librerías para estilos de CSS.
+					<section className='header-text'>¡Hola! Mi nombre es <a className='olivo href'>Rodrigo Gutiérrez Pacheco</a> y soy un apasionado desarrollador web front-end junior. Mi habilidad principal es el desarrollo con HTML, CSS, JavaScript y React.js, además de tener conocimientos en diversas librerías para estilos de CSS.
 
           Soy una persona proactiva, creativa y altamente motivada. Me encanta trabajar en equipo y aprender cosas nuevas, siempre estoy buscando maneras de mejorar y crecer profesionalmente. Mi mayor satisfacción es ver los proyectos en los que trabajo cobrar vida y lograr los objetivos que se han propuesto.
 
@@ -234,16 +234,16 @@ const HomePage = () => {
 			<div className='header'>
 			<h1 className='olivo start hard'>&lt;Soft<span className='blanco'>Skills&gt;</span></h1>
 			<div className='wrap1'>
-				<h1 className='soft'>&lt;Comunicacion/&gt;</h1>
+				<h1 className='soft'>&lt;Comunicación/&gt;</h1>
 				<h1 className='soft'>&lt;Liderazgo/&gt;</h1>
 				<h1 className='soft'>&lt;Trabajo en equipo/&gt;</h1>
 				<h1 className='soft'>&lt;Creatividad/&gt;</h1>
 				<h1 className='soft'>&lt;Adaptabilidad/&gt;</h1>
-				<h1 className='soft'>&lt;Resolucion de problemas/&gt;</h1>
+				<h1 className='soft'>&lt;Resolución de problemas/&gt;</h1>
 				<h1 className='soft'>&lt;Autodisciplina/&gt;</h1>
 				<h1 className='soft'>&lt;Autodidacta/&gt;</h1>
-				<h1 className='soft'>&lt;Pensamiento Logico/&gt;</h1>
-				<h1 className='soft'>&lt;Comprension/&gt;</h1>
+				<h1 className='soft'>&lt;Pensamiento Lógico/&gt;</h1>
+				<h1 className='soft'>&lt;Comprensión/&gt;</h1>
 				<h1 className='soft'>&lt;Pensamiento Critico/&gt;</h1>
 			</div>
 			<h1 className='olivo1 start'>&lt;/Soft<span className='blanco1'>Skills&gt;</span></h1>
@@ -315,7 +315,7 @@ const HomePage = () => {
        <input required placeholder='Ingresa tu Nombre completo' className='input' type="text" name="user_name" />
 			</div>
 			<div className='flex2'>
-       <label className='blanco text'>Correo Electronico:</label>
+       <label className='blanco text'>Correo Electrónico:</label>
        <input required placeholder='correo@correo.com' className='input' type="email" name="user_email" />
 			</div>
 			<div className='flex2'>
