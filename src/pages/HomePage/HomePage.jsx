@@ -134,7 +134,7 @@ const HomePage = () => {
 		<nav className='nav'>
 			<a href='#proyectos' className='blanco2 start href'>&lt;Proyectos/&gt;</a>
 			<a href='#contacto' className='blanco2 start href'>&lt;Redes/&gt;</a>
-			<a href='#cotizaciones' className='blanco2 start href'>&lt;Cotizaciones/&gt;</a>
+			<a href='#cotizaciones' className='blanco2 start href'>&lt;Contacto/&gt;</a>
 		</nav>
 		<header className='header'>
 			<div className='header1'>
