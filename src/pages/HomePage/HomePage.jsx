@@ -5,6 +5,8 @@ import emailjs from 'emailjs-com'
 import Swal from 'sweetalert2';
 import { register } from 'swiper/element/bundle';
 import Carousel from 'react-bootstrap/Carousel';
+import { Helmet } from 'react-helmet';
+
 
 const HomePage = () => {
 
@@ -131,6 +133,16 @@ const HomePage = () => {
 
 	return (
 		<div className='body' id='inicio'>
+			<Helmet>
+				<meta charSet="utf-8" />
+				<link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+				<meta name="viewport" content="width=device-width, initial-scale=1" />
+				<meta name="theme-color" content="#000000" />
+				<meta name="description" content="Proyectos-Redes-Contacto" />
+				<meta property="og:image" content="/images/guiño.gif" />
+				<title>Desarrollador Web</title>
+			</Helmet>
+
 		<nav className='nav'>
 			<a href='#proyectos' className='blanco2 start href'>&lt;Proyectos/&gt;</a>
 			<a href='#contacto' className='blanco2 start href'>&lt;Redes/&gt;</a>
