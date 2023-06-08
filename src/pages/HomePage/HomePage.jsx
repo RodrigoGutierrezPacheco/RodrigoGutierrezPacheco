@@ -138,10 +138,14 @@ const HomePage = () => {
 				<link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
 				<meta name="theme-color" content="#000000" />
-				<meta name="description" content="Proyectos-Redes-Contacto" />
+				<meta
+					name="description"
+					content="Soy un apasionado desarrollador web junior. Mi habilidad principal es el desarrollo con HTML, CSS, JavaScript y React.js. Estoy comprometido en crear proyectos web increíbles y brindar soluciones a medida para mis clientes."
+				/>
 				<meta property="og:image" content="/images/guiño.gif" />
-				<title>Desarrollador Web</title>
+				<title>Desarrollador Web - Proyectos, Redes, Contacto</title>
 			</Helmet>
+
 
 		<nav className='nav'>
 			<a href='#proyectos' className='blanco2 start href'>&lt;Proyectos/&gt;</a>
