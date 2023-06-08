@@ -131,6 +131,8 @@ const HomePage = () => {
 
 	]
 
+	
+
 	return (
 		<div className='body' id='inicio'>
 			<Helmet>
