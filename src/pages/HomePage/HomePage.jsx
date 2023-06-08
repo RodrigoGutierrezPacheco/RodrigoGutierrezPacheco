@@ -133,7 +133,7 @@ const HomePage = () => {
 
 	return (
 		<div className='body' id='inicio'>
-			{/* <Helmet>
+			<Helmet>
 				<meta charSet="utf-8" />
 				<link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -144,7 +144,7 @@ const HomePage = () => {
 				/>
 				<meta property="og:image" content="/images/guiño.gif" />
 				<title>Desarrollador Web - Proyectos, Redes, Contacto</title>
-			</Helmet> */}
+			</Helmet>
 
 
 		<nav className='nav'>
