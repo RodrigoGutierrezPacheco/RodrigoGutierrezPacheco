@@ -137,8 +137,7 @@ const HomePage = () => {
 		<div className='body' id='inicio'>
 			<Helmet>
 				<meta charSet="utf-8" />
-				<link rel="icon" href="/public/favicon.ico" />
-				<link rel="shortcut icon" href="/public/favicon.ico" />
+				<link rel="icon" href="/public/images/guiño1.ico" />
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
 				<meta name="theme-color" content="#000000" />
 				<meta
