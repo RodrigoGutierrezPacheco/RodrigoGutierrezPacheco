@@ -23,7 +23,8 @@
 		top: 0;
 		overflow-x: hidden;
 		}
-	
+
+
 		.nav{
 			color: white;
 			display: flex;
@@ -37,6 +38,7 @@
 			margin-left: auto;
 			padding: .2rem;
 		}
+		
  
 		.img-curso{
 			width: 10vw;
@@ -297,6 +299,8 @@
 			border-radius: 1rem;
 			margin-top: 1rem;
 		}
+
+		
 	
 		.container2{
 			background-color: rgba(0, 0, 0, .2);

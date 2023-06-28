@@ -184,7 +184,7 @@ const HomePage = () => {
 				</div>
 			</div>
 		</header>
-		<skills className="header">
+		<div className="header">
 			<div className='header1'>
 				<div className='width'>
 					<h1 className='olivo start hard'>&lt;Hard <br /><span className='blanco'>Skills&gt;</span></h1>
@@ -226,7 +226,7 @@ const HomePage = () => {
 				</div>
 			</div>
 			<h1 className='olivo1 start'>&lt;/Hard<span className='blanco1'>Skills&gt;</span></h1>
-		</skills>
+		</div>
 
 		{/* Certificaciones */}
 		{/* <div className='header'>
@@ -268,36 +268,39 @@ const HomePage = () => {
 			</div>
 
 			{/* Proyectos */}
-		<proyectos className="header" id="proyectos">
-		<h1 className='olivo start hard'>&lt;Proye<span className='blanco'>ctos&gt;</span></h1>
-			<div className='wrap scroll2'>
-		{proyectos.map((proyecto)=>{
-			return(
-				<div key={proyecto.nombre} className='container1'>
-				<div className='space'>
-					<img className='png1' src={`images/${proyecto.logo}.png`} alt="" />
-					<a href={proyecto.github}><img className='png1' src="images/github.png" alt="" /></a>
-				</div>
-				<h1 className='blanco start line-height'>{proyecto.nombre}</h1>
-				<h1 className='blanco start line-height'>{proyecto.tipo}</h1>
-				<h1 className='blanco1 start marginb'>{proyecto.descripcion}</h1>
-			<div className='row'>
-				<img className='png' src={`images/${proyecto.tecnologia1}.png`} alt="" />
-				<img className='png' src={`images/${proyecto.tecnologia2}.png`} alt="" />
-				<img className='png' src={`images/${proyecto.tecnologia3}.png`} alt="" />
-				<img className='png' src={`images/${proyecto.tecnologia4}.png`} alt="" />
-				<img className='png' src={`images/${proyecto.tecnologia5}.png`} alt="" />
-				<img className='png' src={`images/${proyecto.tecnologia6}.png`} alt="" />
-				<img className='png' src={`images/${proyecto.tecnologia7}.png`} alt="" />
-				<img className='png' src="images/npm.png" alt="" />
-			</div>
-			<button hre className='btnVisitar'><a className='href blanco' href={proyecto.href}>Visitar</a></button>
-			</div>
-			)
-		})}
-		</div>
-			<h1 className='olivo1 start'>&lt;/Proye<span className='blanco1'>ctos&gt;</span></h1>
-		</proyectos>
+		<div className="header" id="proyectos">
+  <h1 className='olivo start hard'>&lt;Proye<span className='blanco'>ctos&gt;</span></h1>
+  <div className='scroll-container'>
+    <div className='wrap scroll2'>
+      {proyectos.map((proyecto) => {
+        return (
+          <div key={proyecto.nombre} className='container1'>
+            <div className='space'>
+              <img className='png1' src={`images/${proyecto.logo}.png`} alt="" />
+              <a href={proyecto.github}><img className='png1' src="images/github.png" alt="" /></a>
+            </div>
+            <h1 className='blanco start line-height'>{proyecto.nombre}</h1>
+            <h1 className='blanco start line-height'>{proyecto.tipo}</h1>
+            <h1 className='blanco1 start marginb'>{proyecto.descripcion}</h1>
+            <div className='row'>
+              <img className='png' src={`images/${proyecto.tecnologia1}.png`} alt="" />
+              <img className='png' src={`images/${proyecto.tecnologia2}.png`} alt="" />
+              <img className='png' src={`images/${proyecto.tecnologia3}.png`} alt="" />
+              <img className='png' src={`images/${proyecto.tecnologia4}.png`} alt="" />
+              <img className='png' src={`images/${proyecto.tecnologia5}.png`} alt="" />
+              <img className='png' src={`images/${proyecto.tecnologia6}.png`} alt="" />
+              <img className='png' src={`images/${proyecto.tecnologia7}.png`} alt="" />
+              <img className='png' src="images/npm.png" alt="" />
+            </div>
+            <button className='btnVisitar'><a className='href blanco' href={proyecto.href}>Visitar</a></button>
+          </div>
+        )
+      })}
+    </div>
+  </div>
+  <h1 className='olivo1 start'>&lt;/Proye<span className='blanco1'>ctos&gt;</span></h1>
+</div>
+
 
 		{/* Contacto */}
 		<contacto id='contacto' className="header">
