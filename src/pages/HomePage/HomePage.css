@@ -186,6 +186,11 @@
 			color: white;
 			font-weight: 700;
 		}
+
+		.blanco:hover{
+			color: white;
+			font-weight: 700;
+		}
 	
 		.footer{
 			border-bottom: 4px solid #556B2F;
@@ -206,6 +211,10 @@
 			font-weight: 700;
 			font-size: 1rem;
 			text-decoration: none;
+		}
+
+		.blanco2:hover{
+			color: white;
 		}
 	
 		.olivo{
@@ -473,6 +482,7 @@
 			border-radius: .5rem;
 			width: 30vw;
 		}
+		
 	
 		.png-header{
 			width: 5vw;

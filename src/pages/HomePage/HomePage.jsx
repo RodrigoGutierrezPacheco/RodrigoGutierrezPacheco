@@ -131,6 +131,11 @@ const HomePage = () => {
 
 	]
 
+	const visitarProyecto = (href) =>{
+		console.log(href)
+		window.location.href = href
+	}
+
 	
 
 	return (
@@ -292,7 +297,7 @@ const HomePage = () => {
               <img className='png' src={`images/${proyecto.tecnologia7}.png`} alt="" />
               <img className='png' src="images/npm.png" alt="" />
             </div>
-            <button className='btnVisitar'><a className='href blanco' href={proyecto.href}>Visitar</a></button>
+            <button onClick={()=>{visitarProyecto(proyecto.href)}} className='btnVisitar'><a className='href blanco' href={proyecto.href}>Visitar</a></button>
           </div>
         )
       })}
