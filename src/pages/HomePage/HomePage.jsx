@@ -285,8 +285,8 @@ const HomePage = () => {
 										<img className='png1' src={`images/${proyecto.logo}.png`} alt="" />
 										<a href={proyecto.github}><img className='png1' src="images/github.png" alt="" /></a>
 									</div>
-									<h1 className='blanco start line-height'>{proyecto.nombre}</h1>
-									<h1 className='blanco start line-height'>{proyecto.tipo}</h1>
+									<h1 className='text-white font-bold start line-height'>{proyecto.nombre}</h1>
+									<h1 className='text-white start line-height'>{proyecto.tipo}</h1>
 									<h1 className='blanco1 start marginb'>{proyecto.descripcion}</h1>
 									<div className='row'>
 										<img className='png' src={`images/${proyecto.tecnologia1}.png`} alt="" />
