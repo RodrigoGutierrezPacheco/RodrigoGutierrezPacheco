@@ -76,7 +76,7 @@ const HomePage = () => {
 		{
 			nombre: "Blxck-Training",
 			tipo: "App",
-			descripcion: "App web de rutinas para gimnasio y casa",
+			descripcion: "App movil de rutinas para gimnasio y casa",
 			logo: "pesoa",
 			github: "https://github.com/RodrigoGutierrezPacheco/BlxckTraining",
 			href: "https://blxck-training.vercel.app/",
